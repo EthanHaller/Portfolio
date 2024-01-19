@@ -1,34 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 :root {
-  color-scheme: light dark;
+	color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-primary: #194161;
-    --bg-secondary: #20547D;
-    --accent-primary: #8CC084;
-    --accent-secondary: #45793E;
-    --text-primary: #EBEBEB;
-    --text-secondary: #CCCCCC;
-  }
+	:root {
+		--bg-primary: #194161;
+		--bg-secondary: #20547d;
+		--accent-primary: #8cc084;
+		--accent-secondary: #45793e;
+		--text-primary: #ebebeb;
+		--text-secondary: #cccccc;
+	}
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --bg-primary: #EBEBEB;
-    --bg-secondary: #CCCCCC;
-    --accent-primary: #45793E;
-    --accent-secondary: #8CC084;
-    --text-primary: #194161;
-    --text-secondary: #20547D;
-  }
+	:root {
+		--bg-primary: #ebebeb;
+		--bg-secondary: #cccccc;
+		--accent-primary: #45793e;
+		--accent-secondary: #8cc084;
+		--text-primary: #194161;
+		--text-secondary: #20547d;
+	}
 }
 
-
 :root {
-  background-color: var(--bg-primary);
+	background-color: var(--bg-primary);
+	font-family: "Montserrat", sans-serif;
 }
 
 body {
-  margin: 0;
+	margin: 0;
+}
+
+a {
+	color: var(--accent-primary);
 }

@@ -1,0 +1,43 @@
+p {
+	color: var(--text-secondary);
+	margin: 0;
+}
+
+h1 {
+	color: var(--text-primary);
+	font-size: min(6em, 10vw);
+	font-weight: 900;
+	margin: 0;
+}
+
+.home-block {
+	border: 1px dashed red;
+	height: calc(100vh - 3rem);
+	max-width: 1000px;
+	min-width: 80vw;
+	margin: auto;
+	padding-inline: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.home-text {
+	align-self: center;
+	min-width: 400px;
+	max-width: 40rem;
+}
+
+.name {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.avatar {
+	height: auto;
+	max-width: 300px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-inline: 2rem;
+}
