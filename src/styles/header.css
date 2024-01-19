@@ -1,0 +1,15 @@
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+    height: 3rem;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    transition-property: all; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+  }
+  
+  .header.hide {
+    top: -3rem;
+  }
