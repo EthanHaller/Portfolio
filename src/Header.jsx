@@ -3,14 +3,17 @@
 import { useState, useEffect } from "react"
 import "./styles/header.css"
 
-function Header() {
+function Header({ handleScroll }) {
 	const scrollDirection = useScrollDirection()
 
 	return (
 		<>
-			<div className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
-				<div>Disappearing Header</div>
-			</div>
+			<nav className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
+				<a href="#about" className="nav-item" onClick={() => handleScroll("about")}>About</a>
+				<a href="#work" className="nav-item" onClick={() => handleScroll("work")}>Work</a>
+				<a href="#projects" className="nav-item" onClick={() => handleScroll("projects")}>Projects</a>
+				<a href="#contact" className="nav-item" onClick={() => handleScroll("contact")}>Contact</a>
+			</nav>
 		</>
 	)
 }
@@ -29,10 +32,7 @@ function useScrollDirection() {
 			}
 			lastScrollY = scrollY > 0 ? scrollY : 0
 		}
-		window.addEventListener("scroll", updateScrollDirection) // add event listener
-		// return () => {
-		// 	window.removeEventListener("scroll", updateScrollDirection) // clean up
-		// }
+		window.addEventListener("scroll", updateScrollDirection)
 	}, [scrollDirection])
 
 	return scrollDirection

@@ -1,12 +1,12 @@
 import { useState } from "react"
 import "./styles/work.css"
 
-function Work() {
+function Work({ innerRef }) {
 	const [workShowing, setWorkShowing] = useState("Yext")
 
 	return (
 		<>
-			<div className="container">
+			<div className="container" ref={innerRef}>
 				<h2>Work</h2>
 			</div>
 		</>

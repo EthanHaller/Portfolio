@@ -2,10 +2,10 @@ import { useState } from "react"
 import avatar from "./images/avatar.png"
 import "./styles/home.css"
 
-function Home() {
+function Home({ innerRef }) {
 	return (
 		<>
-			<div className="home-block container">
+			<div className="home-block container" ref={innerRef}>
 				<div className="home-text">
 					<p className="hello-text">Hello, my name is </p>
 					<h1 className="name">Ethan Haller</h1>

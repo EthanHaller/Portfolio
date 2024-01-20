@@ -1,12 +1,11 @@
 import { useState } from "react"
 import "./styles/contact.css"
 
-function Contact() {
-
+function Contact({ innerRef }) {
 	return (
 		<>
-			<div className="container">
-				<h2>Projects</h2>
+			<div className="container" ref={innerRef}>
+				<h2>Contact</h2>
 			</div>
 		</>
 	)

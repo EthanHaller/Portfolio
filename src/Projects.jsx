@@ -1,11 +1,10 @@
 import { useState } from "react"
 import "./styles/projects.css"
 
-function Projects() {
-
+function Projects({ innerRef }) {
 	return (
 		<>
-			<div className="container">
+			<div className="container" ref={innerRef}>
 				<h2>Projects</h2>
 			</div>
 		</>
