@@ -11,12 +11,7 @@ h1 {
 }
 
 .home-block {
-	border: 1px dashed red;
 	height: calc(100vh - 3rem);
-	max-width: 1000px;
-	min-width: 80vw;
-	margin: auto;
-	padding-inline: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;

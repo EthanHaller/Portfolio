@@ -5,7 +5,7 @@ import "./styles/home.css"
 function Home() {
 	return (
 		<>
-			<div className="home-block">
+			<div className="home-block container">
 				<div className="home-text">
 					<p className="hello-text">Hello, my name is </p>
 					<h1 className="name">Ethan Haller</h1>

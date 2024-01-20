@@ -38,3 +38,11 @@ body {
 a {
 	color: var(--accent-primary);
 }
+
+.container {
+	border: 1px dashed red;
+	max-width: 1000px;
+	min-width: 80vw;
+	margin: auto;
+	padding-inline: 1rem;
+}
