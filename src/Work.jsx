@@ -1,6 +1,5 @@
 import { useState } from "react"
-import avatar from "./images/avatar.png"
-import "./styles/home.css"
+import "./styles/work.css"
 
 function Work() {
 	const [workShowing, setWorkShowing] = useState("Yext")
