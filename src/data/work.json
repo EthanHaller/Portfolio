@@ -1,0 +1,42 @@
+[
+	{
+		"company": "Yext",
+		"link": "https://www.yext.com/",
+		"position": "Softare Engineer Intern",
+		"dates": "May 2024 — Present",
+		"bullets": [],
+		"skills": []
+	},
+    {
+		"company": "University of Virginia",
+		"link": "https://engineering.virginia.edu/departments/computer-science",
+		"position": "Teaching Assistant",
+		"dates": "August 2023 — Present",
+		"bullets": [],
+		"skills": []
+	},
+	{
+		"company": "CargoLabs",
+		"link": "https://cargolabs.org/",
+		"position": "Softare Engineer Intern",
+		"dates": "June 2023 — August 2023",
+		"bullets": [
+			"Developed, tested, and integrated several new scalable features into production in a distributed cloud infrastructure by making daily deployments to Amazon Web Services (Lambda, S3) using Serverless Framework.",
+			"Reduced frontend page load time by 57% through the modularization of existing JavaScript files and implementation of an optimized algorithm for rendering dynamic content into a table.",
+			"Accelerated MySQL insert efficiency from exponential time to constant time by designing and executing a query optimization algorithm that resulted in a significant reduction in insert statements.",
+			"Facilitated the acquisition of a client by directly communicating to bring a new and required feature to life."
+		],
+		"skills": ["HTML", "CSS", "JavaScript", "AWS"]
+	},
+	{
+		"company": "UVA Biocomplexity Institute",
+		"link": "https://biocomplexity.virginia.edu/",
+		"position": "Research Intern",
+		"dates": "May 2022 — July 2022",
+		"bullets": [
+			"Processed COVID-19 mobility data from 1.8 million U.S. locations for a project funded by the National Science Foundation by employing custom Python and PostgreSQL scripts to manage large and diverse file formats.",
+			"Led a presentation to over 120 faculty and interns at the UVA Biocomplexity Institute's annual research symposium by collaborating with a mentor to research and create a final poster of all research findings."
+		],
+		"skills": ["Python", "PostgreSQL"]
+	}
+]

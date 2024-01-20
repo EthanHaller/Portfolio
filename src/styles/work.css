@@ -1,0 +1,70 @@
+.work-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container {
+	display: flex;
+	flex-direction: column;
+    width: 350px;
+}
+
+.button-wrapper {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	min-width: 225px;
+}
+
+.line {
+	height: 1px;
+	background-color: var(--text-secondary);
+	margin-right: 10px;
+	width: 50px;
+	transition: width 0.3s ease;
+}
+
+.button-wrapper.active .line {
+	height: 2px;
+	width: 125px;
+	background-color: var(--text-primary);
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: var(--text-secondary);
+    font-family: "Inter", sans-serif;
+}
+
+.button-wrapper.active button {
+	color: var(--text-primary);
+}
+
+.work-description-container {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.date {
+    width: auto;
+    min-width: 225px;
+    text-align: end;
+    margin-right: 1rem;
+}
+
+.bullet {
+	margin-top: 10px;
+	font-size: 14px;
+	color: var(--text-secondary);
+}
+
+h3 {
+    font-weight: 900;
+    margin: 0;
+}
