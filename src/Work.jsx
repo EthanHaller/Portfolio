@@ -4,14 +4,25 @@ import "./styles/work.css"
 
 function Work({ innerRef }) {
 	const [workShowing, setWorkShowing] = useState("Yext")
+	const [buttonSelected, setButtonSelected] = useState("Yext")
+	const [fade, setFade] = useState(false)
 
 	const showWork = (workTitle) => {
-		setWorkShowing(workTitle)
+		setButtonSelected(workTitle)
+		setFade(true)
+		setTimeout(() => {
+			setWorkShowing(workTitle)
+			setFade(false)
+		}, 150)
 	}
 
 	const workButtons = workData.map((workItem) => (
-		<div key={workItem.company} className={`button-wrapper ${workShowing === workItem.company ? "active" : ""}`} onClick={() => showWork(workItem.company)}>
-			<div className="line"></div>
+		<div
+			key={workItem.company}
+			className={`button-wrapper ${buttonSelected === workItem.company ? "active" : ""}`}
+			onClick={() => showWork(workItem.company)}
+		>
+			<span className="line"></span>
 			<button>{workItem.company}</button>
 		</div>
 	))
@@ -20,24 +31,38 @@ function Work({ innerRef }) {
 
 	return (
 		<>
-			<div className="container work-container" ref={innerRef}>
-				<div className="buttons-container">{workButtons}</div>
-				<div className="work-description-container">
-					{selectedWork && (
-						<>
-							<p className="date">{selectedWork.dates}</p>
-							<div className="work-description">
-								<h3 className="date-title">
-									{selectedWork.position} • {selectedWork.company}
-								</h3>
-								{selectedWork.bullets.map((bullet, index) => (
-									<p key={index} className="bullet">
-										{bullet}
-									</p>
-								))}
-							</div>
-						</>
-					)}
+			<div className="container" ref={innerRef}>
+				<span className="work-section-title">
+					<span className="title-line first"></span>
+					<h2 className="work-title">Work</h2>
+					<span className="title-line second"></span>
+				</span>
+				<div className="work-container">
+					<div className="buttons-container">{workButtons}</div>
+					<div className={`work-description-container ${fade ? "fade" : ""}`}>
+						{selectedWork && (
+							<>
+								<div className="work-description">
+									<h3 className="position-company">
+										{selectedWork.position} • <a target="_blank" href={selectedWork.link}>{selectedWork.company}</a>
+									</h3>
+									<p className="date">{selectedWork.dates}</p>
+									{selectedWork.bullets.map((bullet, index) => (
+										<p key={index} className="bullet">
+											&#187; {bullet}
+										</p>
+									))}
+								</div>
+								<ul className="skills-list">
+									{selectedWork.skills.map((skill, index) => (
+										<li key={index} className="skill">
+											{skill}
+										</li>
+									))}
+								</ul>
+							</>
+						)}
+					</div>
 				</div>
 			</div>
 		</>

@@ -4,16 +4,24 @@
 		"link": "https://www.yext.com/",
 		"position": "Softare Engineer Intern",
 		"dates": "May 2024 — Present",
-		"bullets": [],
-		"skills": []
+		"bullets": [
+			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
+			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
+			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh"
+		],
+		"skills": ["React", "Java", "AI Stuff"]
 	},
-    {
+	{
 		"company": "University of Virginia",
 		"link": "https://engineering.virginia.edu/departments/computer-science",
 		"position": "Teaching Assistant",
 		"dates": "August 2023 — Present",
-		"bullets": [],
-		"skills": []
+		"bullets": [
+			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
+			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
+			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh"
+		],
+		"skills": ["Java", "Django"]
 	},
 	{
 		"company": "CargoLabs",

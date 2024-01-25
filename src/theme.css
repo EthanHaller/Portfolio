@@ -4,23 +4,23 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg-primary: #194161;
-		--bg-secondary: #20547d;
+		--bg-primary: #112b41;
+		--bg-secondary: #194261;
 		--accent-primary: #8cc084;
 		--accent-secondary: #45793e;
 		--text-primary: #ebebeb;
-		--text-secondary: #cccccc;
+		--text-secondary: #c2c2c2;
 	}
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		--bg-primary: #ebebeb;
-		--bg-secondary: #cccccc;
+		--bg-secondary: #c2c2c2;
 		--accent-primary: #45793e;
 		--accent-secondary: #8cc084;
-		--text-primary: #194161;
-		--text-secondary: #20547d;
+		--text-primary: #112b41;
+		--text-secondary: #194261;
 	}
 }
 
@@ -38,16 +38,20 @@
 
 body {
 	margin: 0;
+	background-image: radial-gradient(var(--bg-secondary) 1px, transparent 0);
+	background-size: 40px 40px;
 }
 
 a {
 	color: var(--accent-primary);
+	text-decoration: none;
 }
 
 .container {
-	border: 1px dashed red;
+	/* border: 1px dashed red; */
 	max-width: 1000px;
 	min-width: 80vw;
 	margin-inline: auto;
+	margin-bottom: 3rem;
 	padding-inline: 1rem;
 }

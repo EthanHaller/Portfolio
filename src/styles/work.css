@@ -1,12 +1,16 @@
 .work-container {
-    display: flex;
-    justify-content: center;
+	padding-top: 3rem;
+	padding-bottom: 6rem;
+	display: flex;
+	justify-content: center;
 }
 
+
 .buttons-container {
+	margin-top: 3rem;
 	display: flex;
 	flex-direction: column;
-    width: 350px;
+	width: 400px;
 }
 
 .button-wrapper {
@@ -24,7 +28,17 @@
 	background-color: var(--text-secondary);
 	margin-right: 10px;
 	width: 50px;
-	transition: width 0.3s ease;
+	transition: width 0.2s ease;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: var(--text-secondary);
+	font-family: "Inter", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 500;
 }
 
 .button-wrapper.active .line {
@@ -33,38 +47,88 @@
 	background-color: var(--text-primary);
 }
 
-button {
-	border: none;
-	background: none;
-	cursor: pointer;
-	color: var(--text-secondary);
-    font-family: "Inter", sans-serif;
-}
-
 .button-wrapper.active button {
 	color: var(--text-primary);
 }
 
+.button-wrapper:hover .line {
+	height: 2px;
+	width: 125px;
+	background-color: var(--text-primary);
+}
+
+.button-wrapper:hover button {
+	color: var(--text-primary);
+}
+
 .work-description-container {
-    width: 700px;
-    display: flex;
-    justify-content: center;
+	width: 600px;
+}
+
+.work-description-container.fade {
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+.position-company {
+	margin-bottom: 0.25rem;
+	font-size: 1.5rem;
+	letter-spacing: 0.0625rem;
 }
 
 .date {
-    width: auto;
-    min-width: 225px;
-    text-align: end;
-    margin-right: 1rem;
+	margin-bottom: 1rem;
+	font-size: 0.875rem;
+	font-weight: lighter;
 }
 
 .bullet {
-	margin-top: 10px;
-	font-size: 14px;
-	color: var(--text-secondary);
+	margin-bottom: 1rem;
+	line-height: 1.5;
+	font-weight: 300;
 }
 
-h3 {
-    font-weight: 900;
-    margin: 0;
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.skill {
+	background-color: var(--accent-secondary);
+	color: var(--accent-primary);
+	list-style-type: none;
+	border-radius: 30px;
+	margin-top: 0.75rem;
+	margin-right: 0.75rem;
+	padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+	font-size: 0.875rem;
+}
+
+.work-section-title {
+	display: flex;
+	align-items: center;
+	max-width: 1000px;
+	margin-inline: auto;
+	padding-top: 5rem;
+}
+
+.title-line {
+	height: 1px;
+	background-color: var(--bg-secondary);
+}
+
+.title-line.first {
+	width: 100px;
+}
+
+.title-line.second {
+	width: 300px;
+}
+
+.work-title {
+	font-size: 2rem;
+	margin-inline: 1rem;
 }
