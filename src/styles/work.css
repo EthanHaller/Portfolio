@@ -2,7 +2,7 @@
 	padding-top: 3rem;
 	padding-bottom: 6rem;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .buttons-container {
@@ -27,7 +27,7 @@
 	background-color: var(--text-secondary);
 	margin-right: 10px;
 	width: 50px;
-	transition: width 0.2s ease;
+	transition: width 0.3s;
 }
 
 button {
@@ -36,7 +36,7 @@ button {
 	cursor: pointer;
 	color: var(--text-secondary);
 	font-family: "Inter", sans-serif;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 500;
 }
 
@@ -66,7 +66,7 @@ button {
 
 .work-description-container.fade {
 	opacity: 0;
-	transition: opacity 0.15s ease;
+	transition: opacity 0.15s;
 }
 
 .position-company {
@@ -87,6 +87,10 @@ button {
 	font-weight: 400;
 }
 
+.bullet-point {
+	color: var(--accent-primary);
+}
+
 .skills-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -96,12 +100,13 @@ button {
 }
 
 .skill {
-	background-color: var(--accent-secondary);
+	background-color: var(--bg-secondary);
 	color: var(--accent-primary);
 	list-style-type: none;
 	border-radius: 30px;
-	margin-top: 0.75rem;
-	margin-right: 0.75rem;
+	/* border: 1px solid var(--bg-secondary); */
+	margin-top: 0.25rem;
+	margin-right: 1rem;
 	padding: 0.5rem 0.75rem 0.5rem 0.75rem;
 	font-size: 0.875rem;
 }
@@ -132,7 +137,7 @@ button {
 	margin-inline: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
 	.work-section-title {
 		justify-content: center;
 	}

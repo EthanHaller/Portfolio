@@ -2,7 +2,7 @@
 	{
 		"company": "Yext",
 		"link": "https://www.yext.com/",
-		"position": "Softare Engineer Intern",
+		"position": "Software Engineer Intern",
 		"dates": "May 2024 — Present",
 		"bullets": [
 			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
@@ -26,7 +26,7 @@
 	{
 		"company": "CargoLabs",
 		"link": "https://cargolabs.org/",
-		"position": "Softare Engineer Intern",
+		"position": "Software Engineer Intern",
 		"dates": "June 2023 — August 2023",
 		"bullets": [
 			"Developed, tested, and integrated several new scalable features into production in a distributed cloud infrastructure by making daily deployments to Amazon Web Services (Lambda, S3) using Serverless Framework.",
