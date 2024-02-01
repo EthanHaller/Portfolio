@@ -28,6 +28,11 @@
 
 .featured-project-container {
 	display: flex;
+	justify-content: space-between;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
 }
 
 .featured-project-container.reverse {
@@ -37,38 +42,110 @@
 .featured-project-title {
 	position: relative;
 	font-size: 1.5rem;
-	padding: 1.25rem 0 0 1.5rem;
+	padding-top: 1.25rem;
+	padding-inline: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 .featured-project-title.reverse {
 	position: relative;
+	text-align: right;
 	font-size: 1.5rem;
-	padding: 1.25rem 1.5rem 0 0;
 }
 
-.featured-project-title:before, .featured-project-title:after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: transparent;
-    pointer-events: none;
+.featured-project-title:before,
+.featured-project-title:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: transparent;
+	pointer-events: none;
 }
 
 .featured-project-title:before {
-    top: 0;
-    left:0;
-    right: 50%;
+	top: 0;
+	left: 0;
+	right: 80%;
 	bottom: 60%;
-    border-top: 1px solid var(--text-secondary);
-    border-left: 1px solid var(--text-secondary);
+	border-top: 1px solid var(--text-secondary);
+	border-left: 1px solid var(--text-secondary);
 }
 
 .featured-project-title.reverse:before {
-    top: 0;
-    left: 50%;
-    right: 0;
+	top: 0;
+	left: 80%;
+	right: 0;
 	bottom: 60%;
 	border-left: none;
-    border-top: 1px solid var(--text-secondary);
-    border-right: 1px solid var(--text-secondary);
+	border-top: 1px solid var(--text-secondary);
+	border-right: 1px solid var(--text-secondary);
+}
+
+.featured-project-links {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin-inline: 0.75rem;
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0px;
+}
+
+.featured-project-links.reverse {
+	justify-content: flex-end;
+}
+
+.featured-project-link {
+	font-size: 1.5rem;
+	margin-inline: 0.25rem;
+	padding-inline: 0.5rem;
+	color: var(--text-secondary);
+	transition: transform 0.3s ease;
+}
+
+.featured-project-link:hover {
+	color: var(--accent-primary);
+	transform: translate(0px, -5px);
+}
+
+.featured-project-description {
+	padding-inline: 1.5rem;
+	max-width: 50ch;
+	text-align: justify;
+}
+
+.skills-list.projects {
+	margin-left: 1.5rem;
+	margin-top: 1rem;
+	max-width: 50ch;
+}
+
+.skills-list.projects.reverse {
+	justify-content: end;
+}
+
+.featured-project-image-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.featured-project-image {
+	max-width: 35rem;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #194261;
+	opacity: 0.5;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.featured-project-image-wrapper:hover .overlay {
+	opacity: 0;
 }

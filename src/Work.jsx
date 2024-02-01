@@ -44,7 +44,10 @@ function Work({ innerRef }) {
 							<>
 								<div className="work-description">
 									<h3 className="position-company">
-										{selectedWork.position} • <a target="_blank" href={selectedWork.link}>{selectedWork.company}</a>
+										{selectedWork.position} •{" "}
+										<a target="_blank" href={selectedWork.link}>
+											{selectedWork.company}
+										</a>
 									</h3>
 									<p className="date">{selectedWork.dates}</p>
 									{selectedWork.bullets.map((bullet, index) => (

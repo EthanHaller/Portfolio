@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { FaGithub } from "react-icons/fa"
+import { LuExternalLink } from "react-icons/lu"
 import projectData from "./data/projects.json"
 import "./styles/projects.css"
 
@@ -7,7 +8,31 @@ function Projects({ innerRef }) {
 
 	const featuredProjectsElement = featuredProjects.map((project, index) => (
 		<div key={index} className={"featured-project-container" + (index % 2 === 1 ? " reverse" : "")}>
-			<h3 className={"featured-project-title" + (index % 2 === 1 ? " reverse" : "")}>{project.title}</h3>
+			<div className="featured-project-information">
+				<h3 className={"featured-project-title" + (index % 2 === 1 ? " reverse" : "")}>{project.title}</h3>
+				<ul className={"featured-project-links" + (index % 2 === 1 ? " reverse" : "")}>
+					<a target="_blank" href={project.githubLink} className="featured-project-link">
+						<FaGithub />
+					</a>
+					{project.deploymentLink && (
+						<a target="_blank" href={project.deploymentLink} className="featured-project-link">
+							<LuExternalLink />
+						</a>
+					)}
+				</ul>
+				<p className="featured-project-description">{project.description}</p>
+				<ul className={"skills-list projects" + (index % 2 === 1 ? " reverse" : "")}>
+					{project.skills.map((skill, index) => (
+						<li key={index} className="skill">
+							{skill}
+						</li>
+					))}
+				</ul>
+			</div>
+			<div className="featured-project-image-wrapper">
+				<img className="featured-project-image" src={project.imagePath}></img>
+				<div className="overlay"></div>
+			</div>
 		</div>
 	))
 
