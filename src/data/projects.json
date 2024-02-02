@@ -28,7 +28,7 @@
 	},
 	{
 		"title": "Other Project",
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
+		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
 		"imagePath": "src/images/hoosheard.png",
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://hoosheard.com/",
@@ -36,7 +36,8 @@
 	},
 	{
 		"title": "Other Project",
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
+		"large": true,
+		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
 		"imagePath": "src/images/hoosheard.png",
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://hoosheard.com/",
@@ -44,7 +45,8 @@
 	},
 	{
 		"title": "Other Project",
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
+		"large": true,
+		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
 		"imagePath": "src/images/hoosheard.png",
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://hoosheard.com/",
@@ -52,7 +54,7 @@
 	},
 	{
 		"title": "Other Project",
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
+		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
 		"imagePath": "src/images/hoosheard.png",
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://hoosheard.com/",
