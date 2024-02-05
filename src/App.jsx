@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import Home from "./Home"
 import Header from "./Header"
 import Work from "./Work"
@@ -6,6 +6,7 @@ import Projects from "./Projects"
 import Contact from "./Contact"
 
 function App() {
+	const bodyRef = useRef(document.body)
 	const homeRef = useRef(null)
 	const workRef = useRef(null)
 	const projectsRef = useRef(null)
@@ -28,9 +29,40 @@ function App() {
 		}
 	}
 
+	useEffect(() => {
+		const updateMousePosition = (event) => {
+			const { clientX, clientY } = event
+
+			const adjustedX = clientX + window.scrollX
+			const adjustedY = clientY + window.scrollY
+
+			if (!bodyRef.current) return
+			bodyRef.current.style.setProperty("--x", `${adjustedX}px`)
+			bodyRef.current.style.setProperty("--y", `${adjustedY}px`)
+		}
+
+		window.addEventListener("mousemove", updateMousePosition)
+
+		return () => {
+			window.removeEventListener("mousemove", updateMousePosition)
+		}
+	}, [])
+
 	return (
 		<>
-			<Header handleScroll={handleScroll}/>
+			<style>
+				{`
+          body {
+            background-image: radial-gradient(
+              circle farthest-side at var(--x) var(--y),
+              transparent,
+              var(--bg-tertiary) 0%,
+			  transparent 400px
+            );
+          }
+        `}
+			</style>
+			<Header handleScroll={handleScroll} />
 			<Home innerRed={homeRef} />
 			<Work innerRef={workRef} />
 			<Projects innerRef={projectsRef} />

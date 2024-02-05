@@ -146,6 +146,10 @@ function useScrollDirection() {
 			lastScrollY = scrollY > 0 ? scrollY : 0
 		}
 		window.addEventListener("scroll", updateScrollDirection)
+
+		return () => {
+			window.removeEventListener("scroll", updateScrollDirection)
+		}
 	}, [scrollDirection])
 
 	return scrollDirection
