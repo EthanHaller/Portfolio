@@ -6,7 +6,7 @@
 }
 
 .buttons-container {
-	margin-top: 3rem;
+	margin-top: 6rem;
 	display: flex;
 	flex-direction: column;
 	width: 400px;
@@ -36,7 +36,7 @@ button {
 	cursor: pointer;
 	color: var(--text-secondary);
 	font-family: "Inter", sans-serif;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: 500;
 }
 
@@ -71,7 +71,7 @@ button {
 
 .position-company {
 	margin-bottom: 0.25rem;
-	font-size: 1.5rem;
+	font-size: 1.625rem;
 	letter-spacing: 0.0625rem;
 }
 
@@ -85,6 +85,7 @@ button {
 	margin-bottom: 1rem;
 	line-height: 1.5;
 	font-weight: 400;
+	font-size: min(1.125rem, 3.5vw);
 }
 
 .bullet-point {
@@ -104,7 +105,6 @@ button {
 	color: var(--accent-primary);
 	list-style-type: none;
 	border-radius: 30px;
-	/* border: 1px solid var(--bg-secondary); */
 	margin-top: 0.25rem;
 	margin-right: 1rem;
 	padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -121,7 +121,7 @@ button {
 
 .title-line {
 	height: 1px;
-	background-color: var(--bg-secondary);
+	background-color: var(--bg-tertiary);
 }
 
 .title-line.first {
@@ -177,7 +177,7 @@ button {
 	}
 
 	button {
-		font-size: 1rem;
+		font-size: 1.125rem;
 		font-weight: 900;
 	}
 }

@@ -43,7 +43,7 @@ function Projects({ innerRef }) {
 				<div className="card-header">
 					<h4 className="project-title">{project.title}</h4>
 					{project.deploymentLink && (
-						<a target="_blank" href={project.deploymentLink} className="project-link">
+						<a target="_blank" href={project.deploymentLink} className="project-deployment-link">
 							<LuExternalLink />
 						</a>
 					)}

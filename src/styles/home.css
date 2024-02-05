@@ -24,13 +24,15 @@ h1 {
 	max-width: 40rem;
 }
 
-.hello-text, .motto-text {
-	font-size: min(1.125rem, 3vw);
+.hello-text,
+.motto-text {
+	font-size: min(1.25rem, 3vw);
 	line-height: 1.5;
 	font-weight: 400;
 }
 
 .name {
+	font-size: min(6.5rem, 15vw);
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
