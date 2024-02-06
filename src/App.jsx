@@ -75,7 +75,7 @@ function App() {
               circle farthest-side at var(--x) var(--y),
               transparent,
               var(--bg-tertiary) 0%,
-			  transparent 400px
+			  transparent 35vw
             );
           }
         `}

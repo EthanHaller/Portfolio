@@ -8,7 +8,7 @@ function Projects({ innerRef }) {
 	const otherProjects = projectData.filter((project) => !project.featured)
 
 	const featuredProjectsElement = featuredProjects.map((project, index) => (
-		<div key={index} className={"featured-project-container" + (index % 2 === 1 ? " reverse" : "")}>
+		<div key={index} className={"not-yet-viewed featured-project-container" + (index % 2 === 1 ? " reverse" : "")}>
 			<div className="featured-project-information">
 				<h3 className={"featured-project-title" + (index % 2 === 1 ? " reverse" : "")}>{project.title}</h3>
 				<ul className={"featured-project-links" + (index % 2 === 1 ? " reverse" : "")}>
@@ -38,7 +38,7 @@ function Projects({ innerRef }) {
 	))
 
 	const otherProjectsElement = otherProjects.map((project, index) => (
-		<div key={index} className={"other-project-container" + (project.large ? " large" : "")}>
+		<a href={project.deploymentLink} target="_blank" key={index} className={"not-yet-viewed other-project-container" + (project.large ? " large" : "")}>
 			<div className={"card-left" + (project.large ? " large" : "")}>
 				<div className="card-header">
 					<h4 className="project-title">{project.title}</h4>
@@ -56,19 +56,19 @@ function Projects({ innerRef }) {
 			<div className={"card-right" + (project.large ? " large" : "")}>
 				<img className={"project-image" + (project.large ? " large" : "")} src={project.imagePath}></img>
 			</div>
-		</div>
+		</a>
 	))
 
 	return (
 		<>
 			<div className="container" ref={innerRef}>
-				<div className="projects-section-title">
+				<div className="projects-section-title not-yet-viewed">
 					<span className="title-line first"></span>
 					<h2 className="projects-title">Featured Projects</h2>
 					<span className="title-line second"></span>
 				</div>
 				<div className="featured-projects-container">{featuredProjectsElement}</div>
-				<div className="other-projects-section-title">
+				<div className="other-projects-section-title not-yet-viewed">
 					<span className="title-line first"></span>
 					<h2 className="other-projects-title">Other Projects</h2>
 					<span className="title-line second"></span>

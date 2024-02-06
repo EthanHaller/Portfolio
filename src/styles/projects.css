@@ -178,7 +178,7 @@
 	border-radius: 10px;
 	display: flex;
 	justify-content: space-between;
-	transition: transform 0.3s ease;
+	transition: transform 0.05s;
 }
 
 .other-project-container.large {
@@ -188,11 +188,11 @@
 
 .other-project-container:hover .project-deployment-link {
 	color: var(--accent-primary);
-	transform: translate(0px, -5px);
+	transform: translate(0px, -0.5rem);
 }
 
 .other-project-container:hover {
-	transform: translate(0px, -5px);
+	transform: translate(0px, -0.5rem);
 }
 
 .large {
@@ -230,6 +230,7 @@
 
 .project-title {
 	font-size: 1.25rem;
+	color: var(--text-primary);
 	margin: 0 0.5rem 0 0;
 }
 
