@@ -53,7 +53,6 @@ function App() {
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						console.log(entry)
 						entry.target.classList.remove("not-yet-viewed")
 						entry.target.classList.add("viewed")
 					}

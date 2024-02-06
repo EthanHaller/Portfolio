@@ -93,7 +93,7 @@
 
 .featured-project-link:hover {
 	color: var(--accent-primary);
-	transform: translate(0px, -5px);
+	transform: translateY(-0.25rem);
 }
 
 .featured-project-description {
@@ -186,15 +186,6 @@
 	justify-content: flex-start;
 }
 
-.other-project-container:hover .project-deployment-link {
-	color: var(--accent-primary);
-	transform: translate(0px, -0.5rem);
-}
-
-.other-project-container:hover {
-	transform: translate(0px, -0.5rem);
-}
-
 .large {
 	grid-row: span 2;
 }
@@ -245,7 +236,7 @@
 
 .project-link:hover {
 	color: var(--accent-primary);
-	transform: translate(0px, -5px);
+	transform: translateY(-0.25rem);
 }
 
 .project-description {

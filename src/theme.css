@@ -51,7 +51,7 @@ a {
 	max-width: 1000px;
 	min-width: 80vw;
 	margin-inline: auto;
-	margin-bottom: 3rem;
+	padding-bottom: 3rem;
 	padding-inline: 2rem;
 }
 

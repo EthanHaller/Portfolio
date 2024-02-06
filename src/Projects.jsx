@@ -38,12 +38,12 @@ function Projects({ innerRef }) {
 	))
 
 	const otherProjectsElement = otherProjects.map((project, index) => (
-		<a href={project.deploymentLink} target="_blank" key={index} className={"not-yet-viewed other-project-container" + (project.large ? " large" : "")}>
+		<div target="_blank" key={index} className={"other-project-container" + (project.large ? " large" : "")}>
 			<div className={"card-left" + (project.large ? " large" : "")}>
 				<div className="card-header">
 					<h4 className="project-title">{project.title}</h4>
 					{project.deploymentLink && (
-						<a target="_blank" href={project.deploymentLink} className="project-deployment-link">
+						<a target="_blank" href={project.deploymentLink} className="project-link">
 							<LuExternalLink />
 						</a>
 					)}
@@ -56,7 +56,7 @@ function Projects({ innerRef }) {
 			<div className={"card-right" + (project.large ? " large" : "")}>
 				<img className={"project-image" + (project.large ? " large" : "")} src={project.imagePath}></img>
 			</div>
-		</a>
+		</div>
 	))
 
 	return (
@@ -74,7 +74,7 @@ function Projects({ innerRef }) {
 					<span className="title-line second"></span>
 				</div>
 				<div className="other-projects-container">
-					<div className="grid">{otherProjectsElement}</div>
+					<div className="grid not-yet-viewed">{otherProjectsElement}</div>
 				</div>
 			</div>
 		</>
