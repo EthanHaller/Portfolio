@@ -7,7 +7,7 @@ import "./styles/contact.css"
 function Contact({ innerRef }) {
 	return (
 		<>
-			<div className="container" ref={innerRef}>
+			<section className="container" ref={innerRef}>
 				<div className="contact-section-title not-yet-viewed">
 					<span className="title-line first"></span>
 					<h2 className="contact-title">Contact</h2>
@@ -30,7 +30,7 @@ function Contact({ innerRef }) {
 						<FaLinkedin className="contact-icon" />
 					</a>
 				</ul>
-			</div>
+			</section>
 		</>
 	)
 }

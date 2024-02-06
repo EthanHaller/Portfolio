@@ -61,7 +61,7 @@ function Projects({ innerRef }) {
 
 	return (
 		<>
-			<div className="container" ref={innerRef}>
+			<section className="container" ref={innerRef}>
 				<div className="projects-section-title not-yet-viewed">
 					<span className="title-line first"></span>
 					<h2 className="projects-title">Featured Projects</h2>
@@ -76,7 +76,7 @@ function Projects({ innerRef }) {
 				<div className="other-projects-container">
 					<div className="grid not-yet-viewed">{otherProjectsElement}</div>
 				</div>
-			</div>
+			</section>
 		</>
 	)
 }

@@ -5,7 +5,7 @@ import "./styles/home.css"
 function Home({ innerRef }) {
 	return (
 		<>
-			<div className="home-block container" ref={innerRef}>
+			<section className="home-block container" ref={innerRef}>
 				<div className="home-text">
 					<p className="hello-text">Hello, my name is </p>
 					<h1 className="name">Ethan Haller</h1>
@@ -17,7 +17,7 @@ function Home({ innerRef }) {
 				<div className="home-picture">
 					<img src={avatar} alt="avatar" className="avatar"></img>
 				</div>
-			</div>
+			</section>
 		</>
 	)
 }
