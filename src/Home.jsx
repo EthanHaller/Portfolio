@@ -11,7 +11,7 @@ function Home({ innerRef }) {
 					<h1 className="name">Ethan Haller</h1>
 					<p className="motto-text">
 						I am a versatile software engineer specializing in full stack web applications, with a passion for self-improvement. Currently, I do
-						BLANK at <a href="https://www.yext.com/">Yext</a>.
+						BLANK at <a href="https://www.yext.com/" target="_blank">Yext</a>.
 					</p>
 				</div>
 				<div className="home-picture">

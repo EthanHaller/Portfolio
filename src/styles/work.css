@@ -53,11 +53,11 @@ button {
 .button-wrapper:hover .line {
 	height: 2px;
 	width: 125px;
-	background-color: var(--text-primary);
+	background-color: var(--accent-primary);
 }
 
 .button-wrapper:hover button {
-	color: var(--text-primary);
+	color: var(--accent-primary);
 }
 
 .work-description-container {
@@ -82,13 +82,17 @@ button {
 }
 
 .bullet {
+	position: relative;
 	margin-bottom: 1rem;
 	line-height: 1.5;
 	font-weight: 400;
 	font-size: min(1.125rem, 3.5vw);
 }
 
-.bullet-point {
+.bullet::before {
+	content: "»";
+	position: absolute;
+	left: -1rem;
 	color: var(--accent-primary);
 }
 

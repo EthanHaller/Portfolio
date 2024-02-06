@@ -48,6 +48,24 @@ function App() {
 		}
 	}, [])
 
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						console.log(entry)
+						entry.target.classList.remove("not-yet-viewed")
+						entry.target.classList.add("viewed")
+					}
+				})
+			},
+			{ threshold: 0.4 }
+		)
+
+		const hiddenElements = document.querySelectorAll(".not-yet-viewed")
+		hiddenElements.forEach((element) => observer.observe(element))
+	}, [])
+
 	return (
 		<>
 			<style>

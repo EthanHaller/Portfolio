@@ -32,12 +32,12 @@ function Work({ innerRef }) {
 	return (
 		<>
 			<div className="container" ref={innerRef}>
-				<div className="work-section-title">
+				<div className="work-section-title not-yet-viewed">
 					<span className="title-line first"></span>
 					<h2 className="work-title">Work</h2>
 					<span className="title-line second"></span>
 				</div>
-				<div className="work-container">
+				<div className="work-container not-yet-viewed">
 					<div className="buttons-container">{workButtons}</div>
 					<div className={`work-description-container ${fade ? "fade" : ""}`}>
 						{selectedWork && (
@@ -52,7 +52,7 @@ function Work({ innerRef }) {
 									<p className="date">{selectedWork.dates}</p>
 									{selectedWork.bullets.map((bullet, index) => (
 										<p key={index} className="bullet">
-											<span className="bullet-point">&#187;</span> {bullet}
+											{bullet}
 										</p>
 									))}
 								</div>
