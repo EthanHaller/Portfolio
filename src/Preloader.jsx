@@ -15,7 +15,7 @@ function Preloader() {
     return (
         <div className={"preloader-background" + (bgHidden ? " hidden" : "")}>
             <div className="preloader-logo-container">
-                <img src="src/images/EHLogo.png" alt="App Logo" className="preloader-logo" />
+                <img src="/images/EHLogo.png" alt="App Logo" className="preloader-logo" />
             </div>
         </div>
     )

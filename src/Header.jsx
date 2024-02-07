@@ -138,7 +138,7 @@ function Header({ handleScroll }) {
 					<nav className={"mobile-header" + (menuVisible ? " expanded" : "")}>
 						<div className="logo-menu-wrapper">
 							<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
-								<img src="src/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
+								<img src="/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
 							</a>
 							{menuVisible ? (
 								<IoCloseOutline
@@ -168,7 +168,7 @@ function Header({ handleScroll }) {
 			) : (
 				<nav className={"header" + (scrollDirection === "down" ? " hide" : " show")}>
 					<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
-						<img src="src/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
+						<img src="/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
 					</a>
 					<a href="#about" className={"nav-item" + (aboutVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("about")}>
 						About

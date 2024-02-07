@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import avatar from "./images/avatar.png"
 import "./styles/home.css"
 
 function Home({ innerRef }) {
@@ -35,7 +34,7 @@ function Home({ innerRef }) {
 					</p>
 				</div>
 				<div className="home-picture">
-					<img src={avatar} alt="avatar" className={"avatar" + (avatarVisible ? " viewed" : " not-viewed")}></img>
+					<img src="/images/avatar.png" alt="avatar" className={"avatar" + (avatarVisible ? " viewed" : " not-viewed")}></img>
 				</div>
 			</section>
 		</>

@@ -31,7 +31,7 @@ function Projects({ innerRef }) {
 				</ul>
 			</div>
 			<div className="featured-project-image-wrapper">
-				<img className="featured-project-image" src={project.imagePath}></img>
+				<img className="featured-project-image" src={project.imagePath} />
 				<div className="overlay"></div>
 			</div>
 		</div>
@@ -54,7 +54,7 @@ function Projects({ innerRef }) {
 				<p className="project-description">{project.description}</p>
 			</div>
 			<div className={"card-right" + (project.large ? " large" : "")}>
-				<img className={"project-image" + (project.large ? " large" : "")} src={project.imagePath}></img>
+				<img className={"project-image" + (project.large ? " large" : "")} src={project.imagePath} />
 			</div>
 		</div>
 	))
