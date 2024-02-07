@@ -9,6 +9,8 @@ function Header({ handleScroll }) {
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 725)
 	const scrollDirection = useScrollDirection()
 	const [menuVisible, setMenuVisible] = useState(false)
+	const [homeVisible, setHomeVisible] = useState(false)
+	const [menuIconVisible, setMenuIconVisible] = useState(false)
 	const [aboutVisible, setAboutVisible] = useState(false)
 	const [workVisible, setWorkVisible] = useState(false)
 	const [projectsVisible, setProjectsVisible] = useState(false)
@@ -83,6 +85,43 @@ function Header({ handleScroll }) {
 		}
 	}, [menuVisible])
 
+	useEffect(() => {
+		const navItems = ["home", "about", "work", "projects", "contact"]
+
+		if (!isMobile) {
+			navItems.forEach((item, index) => {
+				setTimeout(() => {
+					switch (item) {
+						case "home":
+							setHomeVisible(true)
+							break
+						case "about":
+							setAboutVisible(true)
+							break
+						case "work":
+							setWorkVisible(true)
+							break
+						case "projects":
+							setProjectsVisible(true)
+							break
+						case "contact":
+							setContactVisible(true)
+							break
+						default:
+							break
+					}
+				}, index * 200 + 3500)
+			})
+		} else {
+			setTimeout(() => {
+				setHomeVisible(true)
+			}, 4000)
+			setTimeout(() => {
+				setMenuIconVisible(true)
+			}, 4500)
+		}
+	}, [])
+
 	return (
 		<>
 			{isMobile ? (
@@ -90,11 +129,19 @@ function Header({ handleScroll }) {
 					<div className={"spacer" + (menuVisible ? " show" : " hide")}></div>
 					<div className={"nav-overlay" + (menuVisible ? " show" : " hide")}></div>
 					<nav className={"mobile-header" + (menuVisible ? " expanded" : "")}>
-						{menuVisible ? (
-							<IoCloseOutline className="menu-icon" onClick={() => toggleMenu()}></IoCloseOutline>
-						) : (
-							<IoMenu className="menu-icon" onClick={() => toggleMenu()}></IoMenu>
-						)}
+						<div className="logo-menu-wrapper">
+							<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
+								<img src="src/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
+							</a>
+							{menuVisible ? (
+								<IoCloseOutline
+									className={"menu-icon" + (menuIconVisible ? " viewed" : " not-viewed")}
+									onClick={() => toggleMenu()}
+								></IoCloseOutline>
+							) : (
+								<IoMenu className={"menu-icon" + (menuIconVisible ? " viewed" : " not-viewed")} onClick={() => toggleMenu()}></IoMenu>
+							)}
+						</div>
 						<div className={"nav-items" + (menuVisible ? " show" : " hide")}>
 							<a href="#about" className={`nav-item-mobile ${aboutVisible ? "show" : ""}`} onClick={() => handleMobileScroll("about")}>
 								About
@@ -114,18 +161,18 @@ function Header({ handleScroll }) {
 			) : (
 				<nav className={"header" + (scrollDirection === "down" ? " hide" : " show")}>
 					<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
-						<img src="src/images/EHLogo.png" alt="App Logo" className="header-logo" />
+						<img src="src/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
 					</a>
-					<a href="#about" className="nav-item" onClick={() => handleScroll("about")}>
+					<a href="#about" className={"nav-item" + (aboutVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("about")}>
 						About
 					</a>
-					<a href="#work" className="nav-item" onClick={() => handleScroll("work")}>
+					<a href="#work" className={"nav-item" + (workVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("work")}>
 						Work
 					</a>
-					<a href="#projects" className="nav-item" onClick={() => handleScroll("projects")}>
+					<a href="#projects" className={"nav-item" + (projectsVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("projects")}>
 						Projects
 					</a>
-					<a href="#contact" className="nav-item" onClick={() => handleScroll("contact")}>
+					<a href="#contact" className={"nav-item" + (contactVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("contact")}>
 						Contact
 					</a>
 				</nav>

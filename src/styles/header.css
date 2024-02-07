@@ -61,6 +61,13 @@
 	backdrop-filter: none;
 }
 
+.logo-menu-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .spacer.show {
 	height: 3.5rem;
 }
