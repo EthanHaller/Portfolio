@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import Preloader from "./Preloader"
 import Home from "./Home"
 import Header from "./Header"
 import Work from "./Work"
@@ -69,16 +70,17 @@ function App() {
 		<>
 			<style>
 				{`
-          body {
-            background-image: radial-gradient(
-              circle farthest-side at var(--x) var(--y),
-              transparent,
-              var(--bg-tertiary) 0%,
-			  transparent 35vw
-            );
-          }
-        `}
+					body {
+						background-image: radial-gradient(
+						circle farthest-side at var(--x) var(--y),
+						transparent,
+						var(--bg-tertiary) 0%,
+						transparent 35vw
+						);
+					}
+				`}
 			</style>
+			<Preloader />
 			<Header handleScroll={handleScroll} />
 			<Home innerRed={homeRef} />
 			<Work innerRef={workRef} />
