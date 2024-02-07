@@ -26,7 +26,7 @@ h1 {
 
 .hello-text,
 .motto-text {
-	font-size: min(1.25rem, 3vw);
+	font-size: min(1.25rem, 3.5vw);
 	line-height: 1.5;
 	font-weight: 400;
 }
