@@ -113,6 +113,9 @@ function Header({ handleScroll }) {
 				</>
 			) : (
 				<nav className={"header" + (scrollDirection === "down" ? " hide" : " show")}>
+					<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
+						<img src="src/images/EHLogo.png" alt="App Logo" className="header-logo" />
+					</a>
 					<a href="#about" className="nav-item" onClick={() => handleScroll("about")}>
 						About
 					</a>

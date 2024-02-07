@@ -5,8 +5,10 @@ function Preloader() {
     const [bgHidden, setBgHidden] = useState(false)
 
     useEffect(() => {
+        document.body.style.overflow = "hidden"
         setTimeout(() => {
             setBgHidden(true)
+            document.body.style.overflow = null
         }, 3000)
     },[])
 

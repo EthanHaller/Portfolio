@@ -15,6 +15,19 @@
 	top: -3rem;
 }
 
+.header-logo-wrapper {
+	margin-right: auto;
+	margin-left: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-logo {
+	max-height: 4rem;
+	width: auto;
+}
+
 .nav-item {
 	color: var(--text-primary);
 	padding: 0.75rem;

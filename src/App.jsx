@@ -15,8 +15,8 @@ function App() {
 
 	const handleScroll = (location) => {
 		switch (location) {
-			case "about":
-				homeRef.current?.scrollIntoView({ block: "start", behavior: "smooth" })
+			case "home":
+				window.scrollTo({ top: 0, behavior: "smooth" })
 				break
 			case "work":
 				workRef.current?.scrollIntoView({ block: "start", behavior: "smooth" })
@@ -82,7 +82,7 @@ function App() {
 			</style>
 			<Preloader />
 			<Header handleScroll={handleScroll} />
-			<Home innerRed={homeRef} />
+			<Home innerRef={homeRef} />
 			<Work innerRef={workRef} />
 			<Projects innerRef={projectsRef} />
 			<Contact innerRef={contactRef} />
