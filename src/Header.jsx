@@ -112,12 +112,19 @@ function Header({ handleScroll }) {
 					}
 				}, index * 200 + 3500)
 			})
+			setTimeout(() => {
+				setMenuIconVisible(true)
+			}, 4500)
 		} else {
 			setTimeout(() => {
 				setHomeVisible(true)
 			}, 4000)
 			setTimeout(() => {
 				setMenuIconVisible(true)
+				setAboutVisible(true)
+				setWorkVisible(true)
+				setProjectsVisible(true)
+				setContactVisible(true)
 			}, 4500)
 		}
 	}, [])
