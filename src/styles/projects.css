@@ -106,7 +106,6 @@
 .skills-list.projects {
 	margin-left: 1.5rem;
 	margin-top: 1rem;
-	max-width: 50ch;
 }
 
 .skills-list.projects.reverse {
@@ -117,6 +116,7 @@
 	position: relative;
 	max-width: 35rem;
 	height: auto;
+	margin-inline: 0.5rem;
 }
 
 .featured-project-image {
