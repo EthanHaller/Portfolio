@@ -38,7 +38,7 @@ function Projects({ innerRef }) {
 	))
 
 	const otherProjectsElement = otherProjects.map((project, index) => (
-		<div target="_blank" key={index} className={"other-project-container" + (project.large ? " large" : "")}>
+		<div target="_blank" key={index} className={"not-yet-viewed other-project-container" + (project.large ? " large" : "")}>
 			<div className={"card-left" + (project.large ? " large" : "")}>
 				<div className="card-header">
 					<h4 className="project-title">{project.title}</h4>
@@ -74,7 +74,7 @@ function Projects({ innerRef }) {
 					<span className="title-line second"></span>
 				</div>
 				<div className="other-projects-container">
-					<div className="grid not-yet-viewed">{otherProjectsElement}</div>
+					<div className="grid">{otherProjectsElement}</div>
 				</div>
 			</section>
 		</>

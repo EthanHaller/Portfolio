@@ -39,8 +39,15 @@ h1 {
 
 .avatar {
 	height: auto;
-	max-width: 300px;
+	max-width: max(200px, 20vw);
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-inline: 2rem;
+}
+
+@media (max-width: 725px) {
+	.home-block {
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
 }
