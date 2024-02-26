@@ -69,7 +69,8 @@ function Header({ handleScroll }) {
 	}
 
 	const handleMobileScroll = (section) => {
-		toggleMenu()
+		document.body.style.overflow = null
+		setMenuVisible(false)
 		handleScroll(section)
 	}
 
@@ -137,7 +138,7 @@ function Header({ handleScroll }) {
 					<div className={"nav-overlay" + (menuVisible ? " show" : " hide")}></div>
 					<nav className={"mobile-header" + (menuVisible ? " expanded" : "")}>
 						<div className="logo-menu-wrapper">
-							<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
+							<a href="#home" className="header-logo-wrapper" onClick={() => handleMobileScroll("home")}>
 								<img src="/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
 							</a>
 							{menuVisible ? (

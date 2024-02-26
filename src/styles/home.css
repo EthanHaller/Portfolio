@@ -56,5 +56,6 @@ h1 {
 		flex-direction: column;
 		justify-content: flex-start;
 		row-gap: 3rem;
+		padding-bottom: 0px !important;
 	}
 }
