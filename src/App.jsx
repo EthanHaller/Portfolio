@@ -74,7 +74,7 @@ function App() {
 						background-image: radial-gradient(
 						circle farthest-side at var(--x) var(--y),
 						transparent,
-						var(--bg-tertiary) 0%,
+						var(--bg-secondary) 0%,
 						transparent 35vw
 						);
 					}

@@ -1,11 +1,11 @@
 .preloader-background {
 	position: fixed;
-	bottom: 0;
+	bottom: -15vh;
 	left: 0;
 	right: 0;
 	z-index: 100;
 	width: 100vw;
-	height: 100vh;
+	height: 130vh;
 	background-color: var(--bg-secondary);
 	color: var(--text-primary);
 	display: flex;
@@ -16,7 +16,7 @@
 }
 
 .preloader-background.hidden {
-	bottom: -100vh;
+	bottom: -130vh;
 }
 
 .preloader-logo-container {
@@ -27,7 +27,7 @@
 }
 
 .preloader-logo {
-	max-width: 400px;
+	max-width: 350px;
 	height: auto;
 }
 
@@ -47,10 +47,7 @@
 	60% {
 		transform: scale(1) rotate(-25deg);
 	}
-	75% {
-		transform: scale(1) rotate(720deg);
-	}
 	100% {
-		transform: scale(0);
+		transform: scale(0) rotate(1080deg);
 	}
 }

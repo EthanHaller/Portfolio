@@ -37,7 +37,7 @@ h1 {
 }
 
 .name {
-	font-size: min(6.5rem, 14vw);
+	font-size: min(6.5rem, 12vw);
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
