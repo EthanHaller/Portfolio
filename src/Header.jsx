@@ -11,22 +11,19 @@ function Header({ handleScroll }) {
 	const [menuVisible, setMenuVisible] = useState(false)
 	const [homeVisible, setHomeVisible] = useState(false)
 	const [menuIconVisible, setMenuIconVisible] = useState(false)
-	const [aboutVisible, setAboutVisible] = useState(false)
+	const [resumeVisible, setResumeVisible] = useState(false)
 	const [workVisible, setWorkVisible] = useState(false)
 	const [projectsVisible, setProjectsVisible] = useState(false)
 	const [contactVisible, setContactVisible] = useState(false)
 
 	const toggleMenu = () => {
-		const navItems = ["about", "work", "projects", "contact"]
+		const navItems = ["work", "projects", "contact", "resume"]
 
 		if (menuVisible) {
 			document.body.style.overflow = null
 			navItems.forEach((item, index) => {
 				setTimeout(() => {
 					switch (item) {
-						case "about":
-							setAboutVisible(false)
-							break
 						case "work":
 							setWorkVisible(false)
 							break
@@ -35,6 +32,9 @@ function Header({ handleScroll }) {
 							break
 						case "contact":
 							setContactVisible(false)
+							break
+						case "resume":
+							setResumeVisible(false)
 							break
 						default:
 							break
@@ -48,9 +48,6 @@ function Header({ handleScroll }) {
 			navItems.forEach((item, index) => {
 				setTimeout(() => {
 					switch (item) {
-						case "about":
-							setAboutVisible(true)
-							break
 						case "work":
 							setWorkVisible(true)
 							break
@@ -59,6 +56,9 @@ function Header({ handleScroll }) {
 							break
 						case "contact":
 							setContactVisible(true)
+							break
+						case "resume":
+							setResumeVisible(true)
 							break
 						default:
 							break
@@ -87,7 +87,7 @@ function Header({ handleScroll }) {
 	}, [menuVisible])
 
 	useEffect(() => {
-		const navItems = ["home", "about", "work", "projects", "contact"]
+		const navItems = ["home", "work", "projects", "contact", "resume"]
 
 		if (!isMobile) {
 			navItems.forEach((item, index) => {
@@ -96,8 +96,8 @@ function Header({ handleScroll }) {
 						case "home":
 							setHomeVisible(true)
 							break
-						case "about":
-							setAboutVisible(true)
+						case "resume":
+							setResumeVisible(true)
 							break
 						case "work":
 							setWorkVisible(true)
@@ -122,7 +122,7 @@ function Header({ handleScroll }) {
 			}, 4000)
 			setTimeout(() => {
 				setMenuIconVisible(true)
-				setAboutVisible(true)
+				setResumeVisible(true)
 				setWorkVisible(true)
 				setProjectsVisible(true)
 				setContactVisible(true)
@@ -151,9 +151,6 @@ function Header({ handleScroll }) {
 							)}
 						</div>
 						<div className={"nav-items" + (menuVisible ? " show" : " hide")}>
-							<a href="#about" className={`nav-item-mobile ${aboutVisible ? "show" : ""}`} onClick={() => handleMobileScroll("about")}>
-								About
-							</a>
 							<a href="#work" className={`nav-item-mobile ${workVisible ? "show" : ""}`} onClick={() => handleMobileScroll("work")}>
 								Work
 							</a>
@@ -163,6 +160,9 @@ function Header({ handleScroll }) {
 							<a href="#contact" className={`nav-item-mobile ${contactVisible ? "show" : ""}`} onClick={() => handleMobileScroll("contact")}>
 								Contact
 							</a>
+							<a href="/EthanHallerResume.pdf" target="_blank" className={`nav-item-mobile ${resumeVisible ? "show" : ""}`}>
+								Resume
+							</a>
 						</div>
 					</nav>
 				</>
@@ -170,9 +170,6 @@ function Header({ handleScroll }) {
 				<nav className={"header" + (scrollDirection === "down" ? " hide" : " show")}>
 					<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
 						<img src="/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
-					</a>
-					<a href="#about" className={"nav-item" + (aboutVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("about")}>
-						About
 					</a>
 					<a href="#work" className={"nav-item" + (workVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("work")}>
 						Work
@@ -182,6 +179,9 @@ function Header({ handleScroll }) {
 					</a>
 					<a href="#contact" className={"nav-item" + (contactVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("contact")}>
 						Contact
+					</a>
+					<a href="/EthanHallerResume.pdf" target="_blank" className={"nav-item" + (resumeVisible ? " viewed" : " not-viewed")}>
+						Resume
 					</a>
 				</nav>
 			)}

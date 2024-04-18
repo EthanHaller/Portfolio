@@ -1,5 +1,23 @@
 [
 	{
+		"title": "HoosHeard",
+		"featured": true,
+		"description": "Welcome to HoosHeard, a unique social media platform designed for daily self-expression! Every day, users are presented with a thought-provoking question to answer. The catch? Users must submit their responses before gaining access to all other anonymous user responses.",
+		"imagePath": "/images/hoosheard.png",
+		"githubLink": "https://github.com/EthanHaller/HoosHeardFrontend-Web",
+		"deploymentLink": "https://hoosheard.com/",
+		"skills": ["React", "Express", "Node", "MongoDB"]
+	},
+	{
+		"title": "UVAStudySpaces",
+		"featured": true,
+		"description": "Discover a catalog of study spaces at the University of Virginia, curated by students for students! Explore, search, and view unique features of various study spots across UVA's grounds. Powered by the Google Maps API.",
+		"imagePath": "/images/uvastudyspaces.png",
+		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
+		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
+		"skills": ["Python", "Django", "Heroku", "Google Maps"]
+	},
+	{
 		"title": "Featured Project",
 		"featured": true,
 		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
@@ -9,36 +27,18 @@
 		"skills": ["skill1", "skill2", "skill3"]
 	},
 	{
-		"title": "Featured Project",
-		"featured": true,
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
-		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
+		"title": "Lorem Squarepants",
+		"description": "A Lorem Ipsum generator full of quotes from the SpongeBob SquarePants show!",
+		"imagePath": "https://authy.com/wp-content/uploads/npm-logo.png",
+		"githubLink": "https://github.com/EthanHaller/Lorem-Squarepants",
+		"deploymentLink": "https://www.npmjs.com/package/lorem-squarepants",
+		"skills": ["JavaScript", "npm"]
 	},
 	{
-		"title": "Featured Project",
-		"featured": true,
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
-		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
-	},
-	{
-		"title": "Other Project",
-		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
-		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
-	},
-	{
-		"title": "Other Project",
+		"title": "Credit Score Simulator",
 		"large": true,
-		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
-		"imagePath": "/images/hoosheard.png",
+		"description": "Awarded 1st place in finance track of the 2023 HooHacks Hackathon by building a gamified credit score simulator with 3 friends in under 24 hours.",
+		"imagePath": "/images/creditscoresim.png",
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://hoosheard.com/",
 		"skills": ["skill1", "skill2", "skill3"]
