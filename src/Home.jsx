@@ -29,11 +29,11 @@ function Home({ innerRef }) {
 					<p className={"hello-text" + (helloTextVisible ? " viewed" : " not-viewed")}>Hello, my name is </p>
 					<h1 className={"name" + (nameVisible ? " viewed" : " not-viewed")}>Ethan Haller</h1>
 					<p className={"motto-text" + (mottoTextVisible ? " viewed" : " not-viewed")}>
-						I am a versatile software engineer specializing in full-stack web applications, with a passion for self-improvement. Currently, I do
+						I am a versatile software engineer specializing in full-stack web applications. Currently, I do
 						BLANK at <a href="https://www.yext.com/" target="_blank">Yext</a>.
 					</p>
 				</div>
-				<div className="home-picture">
+				<div className={"home-picture" + (avatarVisible ? " viewed" : " not-viewed")}>
 					<img src="/images/headshot.png" alt="avatar" className={"avatar" + (avatarVisible ? " viewed" : " not-viewed")}></img>
 				</div>
 			</section>

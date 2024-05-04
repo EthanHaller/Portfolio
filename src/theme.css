@@ -1,10 +1,4 @@
 :root {
-	/* color-scheme: light dark; */
-	color-scheme: dark;
-}
-
-/* @media (prefers-color-scheme: dark) { */
-:root {
 	--bg-primary: #112b41;
 	--bg-secondary: #1b354b;
 	--bg-tertiary: #234c6b;
@@ -13,19 +7,6 @@
 	--text-primary: #ebebeb;
 	--text-secondary: #c2c2c2;
 }
-/* } */
-
-/* @media (prefers-color-scheme: light) {
-	:root {
-		--bg-primary: #ebebeb;
-		--bg-secondary: #dfdfdf;
-		--bg-tertiary: #c0c0c0;
-		--accent-primary: #4dbb4a;
-		--accent-secondary: #8cc084;
-		--text-primary: #112b41;
-		--text-secondary: #234c6b;
-	}
-} */
 
 @font-face {
 	font-family: "Inter";
@@ -37,6 +18,7 @@
 :root {
 	background-color: var(--bg-primary);
 	font-family: "Inter", sans-serif;
+	color: var(--text-primary);
 }
 
 body {
