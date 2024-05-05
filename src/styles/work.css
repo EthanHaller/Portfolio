@@ -169,6 +169,12 @@ button {
 		width: 30px;
 	}
 
+	.button-wrapper:hover .line {
+		height: 2px;
+		width: 75px;
+		background-color: var(--accent-primary);
+	}
+
 	.button-wrapper.active .line {
 		width: 75px;
 	}
