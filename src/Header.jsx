@@ -71,6 +71,10 @@ function Header({ handleScroll }) {
 	const handleMobileScroll = (section) => {
 		document.body.style.overflow = null
 		setMenuVisible(false)
+		setWorkVisible(false)
+		setProjectsVisible(false)
+		setContactVisible(false)
+		setResumeVisible(false)
 		handleScroll(section)
 	}
 

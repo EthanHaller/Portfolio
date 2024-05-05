@@ -20,7 +20,7 @@ function Home({ innerRef }) {
 		setTimeout(() => {
 			setAvatarVisible(true)
 		}, 5300)
-	}, )
+	})
 
 	return (
 		<>
@@ -29,12 +29,16 @@ function Home({ innerRef }) {
 					<p className={"hello-text" + (helloTextVisible ? " viewed" : " not-viewed")}>Hello, my name is </p>
 					<h1 className={"name" + (nameVisible ? " viewed" : " not-viewed")}>Ethan Haller</h1>
 					<p className={"motto-text" + (mottoTextVisible ? " viewed" : " not-viewed")}>
-						I am a versatile software engineer specializing in full-stack web applications. Currently, I do
-						BLANK at <a href="https://www.yext.com/" target="_blank">Yext</a>.
+						I am a versatile software engineer specializing in full-stack web applications. Currently, I do BLANK at{" "}
+						<a href="https://www.yext.com/" target="_blank">
+							Yext
+						</a>
+						.
 					</p>
 				</div>
 				<div className={"home-picture" + (avatarVisible ? " viewed" : " not-viewed")}>
-					<img src="/images/headshot.png" alt="avatar" className={"avatar" + (avatarVisible ? " viewed" : " not-viewed")}></img>
+					<span />
+					<img src="/images/headshot.png" alt="avatar" className="avatar"></img>
 				</div>
 			</section>
 		</>

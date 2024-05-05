@@ -8,6 +8,7 @@ function Work({ innerRef }) {
 	const [fade, setFade] = useState(false)
 
 	const showWork = (workTitle) => {
+		if(buttonSelected === workTitle) return;
 		setButtonSelected(workTitle)
 		setFade(true)
 		setTimeout(() => {
