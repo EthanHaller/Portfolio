@@ -1,4 +1,4 @@
-:root {
+/* :root {
 	--bg-primary: #112b41;
 	--bg-secondary: #1b354b;
 	--bg-tertiary: #234c6b;
@@ -6,7 +6,30 @@
 	--accent-secondary: #4dbb4a;
 	--text-primary: #ebebeb;
 	--text-secondary: #c2c2c2;
+} */
+
+:root {
+	--bg-primary: #08151d; /* Darker background */
+	--bg-secondary: #0f232f; /* Darker background */
+	--bg-tertiary: #183b51; /* Darker background */
+	--accent-primary: #8cc084;
+	--accent-secondary: #4dbb4a;
+	--text-primary: #ebebeb;
+	--text-secondary: #c2c2c2;
 }
+
+
+
+/* :root {
+	--bg-primary: #00120b;
+	--bg-secondary: #041d13;
+	--bg-tertiary: #092b1f;
+	--accent-primary: #2cb1d2;
+	--accent-secondary: #0b748b;
+	--text-primary: #ebebeb;
+	--text-secondary: #c2c2c2;
+} */
+
 
 @font-face {
 	font-family: "Inter";
