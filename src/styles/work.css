@@ -164,33 +164,32 @@ button {
 	.work-description-container {
 		width: auto;
 	}
-
+	
 	.line {
-		width: 30px;
-	}
-
-	.button-wrapper:hover .line {
-		height: 2px;
-		width: 75px;
-		background-color: var(--accent-primary);
-	}
-
-	.button-wrapper.active .line {
-		width: 75px;
+		display: none;
 	}
 
 	.buttons-container {
 		margin: 0;
-		width: 100%;
+		width: calc(100vw - 4rem);
+		overflow-x: scroll;
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
 	}
 
 	.button-wrapper {
-		min-width: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: fit-content;
+		border: 1px solid var(--bg-tertiary);
+		background-color: var(--bg-secondary);
+		border-radius: 1rem;
 	}
 
-	button {
-		font-size: 1.125rem;
-		font-weight: 900;
+	.button-wrapper button {
+		display: inline-table;
 	}
 }
 

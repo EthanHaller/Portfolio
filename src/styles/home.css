@@ -74,7 +74,6 @@ h1 {
 .home-picture.viewed {
 	background-size: cover;
 	background-position: center;
-	/* background-image: url(/images/magicpattern-blob-1714837019151.png); */
 }
 
 .avatar {
@@ -88,7 +87,6 @@ h1 {
 	padding-bottom: 3rem;
 	border-bottom-left-radius: 30%;
 	border-bottom-right-radius: 35%;
-	/* filter: drop-shadow(10px 10px 5px var(--accent-primary)); */
 }
 
 @media (max-width: 1000px) {
@@ -96,7 +94,6 @@ h1 {
 		margin-top: 3rem;
 		flex-direction: column;
 		justify-content: flex-start;
-		/* row-gap: 3rem; */
 		padding-bottom: 0px !important;
 	}
 
