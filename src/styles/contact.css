@@ -32,7 +32,7 @@
 
 .contact-link:hover {
 	color: var(--accent-primary);
-	transform: translateY(-0.75rem);
+	transform: translateY(-0.5rem);
 }
 
 .contact-description-container {
