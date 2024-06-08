@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import "./styles/home.css"
+import "..//styles/home.css"
 
 function Home({ innerRef }) {
 	const [helloTextVisible, setHelloTextVisible] = useState(false)
@@ -29,7 +29,7 @@ function Home({ innerRef }) {
 					<p className={"hello-text" + (helloTextVisible ? " viewed" : " not-viewed")}>Hello, my name is </p>
 					<h1 className={"name" + (nameVisible ? " viewed" : " not-viewed")}>Ethan Haller</h1>
 					<p className={"motto-text" + (mottoTextVisible ? " viewed" : " not-viewed")}>
-						I am a versatile software engineer specializing in full-stack web applications. Currently, I do BLANK at{" "}
+						I am a versatile software engineer with a passion for full-stack development. Currently, I am working with React and Go at{" "}
 						<a href="https://www.yext.com/" target="_blank">
 							Yext
 						</a>

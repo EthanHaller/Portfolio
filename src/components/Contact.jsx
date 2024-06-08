@@ -2,7 +2,7 @@ import { useState } from "react"
 import { IoMail } from "react-icons/io5"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
-import "./styles/contact.css"
+import "../styles/contact.css"
 
 function Contact({ innerRef }) {
 	return (

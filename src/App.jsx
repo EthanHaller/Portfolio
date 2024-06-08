@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react"
-import Preloader from "./Preloader"
-import Home from "./Home"
-import Header from "./Header"
-import Work from "./Work"
-import Projects from "./Projects"
-import Contact from "./Contact"
+import Preloader from "./components/Preloader"
+import Home from "./components/Home"
+import Header from "./components/header/Header"
+import Work from "./components/Work"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
 
 function App() {
 	const bodyRef = useRef(document.body)

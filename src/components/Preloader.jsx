@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import "./styles/preloader.css"
+import "../styles/preloader.css"
 
 function Preloader() {
     const [bgHidden, setBgHidden] = useState(false)

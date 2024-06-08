@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import workData from "./data/work.json"
-import "./styles/work.css"
+import workData from "../data/work.json"
+import "../styles/work.css"
 
 function Work({ innerRef }) {
 	const [workShowing, setWorkShowing] = useState("Yext")

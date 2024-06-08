@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa"
 import { LuExternalLink } from "react-icons/lu"
-import projectData from "./data/projects.json"
-import "./styles/projects.css"
+import projectData from "../data/projects.json"
+import "../styles/projects.css"
 
 function Projects({ innerRef }) {
 	const featuredProjects = projectData.filter((project) => project.featured)

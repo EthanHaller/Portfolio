@@ -47,7 +47,6 @@
 	align-items: flex-end;
 	position: sticky;
 	top: 0;
-	right: 0px;
 	width: 100vw;
 	background-color: transparent;
 	backdrop-filter: blur(5px);
@@ -69,7 +68,7 @@
 }
 
 .spacer.show {
-	height: 3.5rem;
+	height: 4rem;
 }
 
 .nav-overlay {
@@ -97,14 +96,18 @@
 }
 
 .nav-items {
+	position: absolute;
+	top: 5rem;
+	z-index: 1000;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	transition: transform 0.5s ease;
 }
 
 .nav-items.hide {
-	display: none;
+	transform: translateY(-100vh);
 }
 
 .nav-item-mobile {
@@ -118,14 +121,15 @@
 	margin: 1rem;
 	border: 2px solid var(--text-primary);
 	border-radius: 30px;
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 0.5s ease, transform 0.5s ease;
+	transition: transform 0.5s ease;
 }
 
 .nav-item-mobile.show {
-	opacity: 1;
 	transform: translateY(0);
+}
+
+.nav-item-mobile.hide {
+	transform: translateY(-100vh);
 }
 
 .nav-item-mobile:hover {
