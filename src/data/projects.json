@@ -2,7 +2,7 @@
 	{
 		"title": "HoosHeard",
 		"featured": true,
-		"description": "Welcome to HoosHeard, a unique social media platform designed for daily self-expression! Every day, users are presented with a thought-provoking question to answer. The catch? Users must submit their responses before gaining access to all other anonymous user responses.",
+		"description": "Welcome to HoosHeard, an anonymous social media platform designed to help your voice be heard! Every day, you are presented with a thought-provoking question to answer. The catch? You must submit your response before you can see all other anonymous responses. Join HoosHeard to share, connect, and be heard!",
 		"imagePath": "/images/hoosheard.png",
 		"githubLink": "https://github.com/EthanHaller/HoosHeardFrontend-Web",
 		"deploymentLink": "https://hoosheard.com/",
