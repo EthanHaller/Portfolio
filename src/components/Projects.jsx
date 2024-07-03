@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa"
+import { FaRegFileAlt } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu"
 import projectData from "../data/projects.json"
 import "../styles/projects.css"
@@ -13,11 +14,16 @@ function Projects({ innerRef }) {
 				<h3 className={"featured-project-title" + (index % 2 === 1 ? " reverse" : "")}>{project.title}</h3>
 				<ul className={"featured-project-links" + (index % 2 === 1 ? " reverse" : "")}>
 					{project.deploymentLink && (
-						<a target="_blank" href={project.deploymentLink} className="featured-project-link">
+						<a aria-label="View Site" target="_blank" href={project.deploymentLink} className="featured-project-link">
 							<LuExternalLink />
 						</a>
 					)}
-					<a target="_blank" href={project.githubLink} className="featured-project-link">
+					{project.fileLink && (
+						<a aria-label="View Report" target="_blank" href="/ML4VA.pdf" className="featured-project-link">
+							<FaRegFileAlt />
+						</a>
+					)}
+					<a aria-label="View Repository" target="_blank" href={project.githubLink} className="featured-project-link">
 						<FaGithub />
 					</a>
 				</ul>
@@ -32,7 +38,6 @@ function Projects({ innerRef }) {
 			</div>
 			<div className="featured-project-image-wrapper">
 				<img className="featured-project-image" src={project.imagePath} />
-				<div className="overlay"></div>
 			</div>
 		</div>
 	))

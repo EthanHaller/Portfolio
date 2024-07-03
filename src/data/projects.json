@@ -2,9 +2,9 @@
 	{
 		"title": "HoosHeard",
 		"featured": true,
-		"description": "Welcome to HoosHeard, an anonymous social media platform designed to help your voice be heard! Every day, you are presented with a thought-provoking question to answer. The catch? You must submit your response before you can see all other anonymous responses. Join HoosHeard to share, connect, and be heard!",
+		"description": "Welcome to HoosHeard, an anonymous social media platform designed to help your voice be heard! Every day, you are presented with a thought-provoking question to answer, but you must submit your response before you can see all other anonymous responses. Join HoosHeard to share, connect, and be heard!",
 		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/EthanHaller/HoosHeardFrontend-Web",
+		"githubLink": "https://github.com/EthanHaller/HoosHeard",
 		"deploymentLink": "https://hoosheard.com/",
 		"skills": ["React", "Express", "Node", "MongoDB"]
 	},
@@ -18,13 +18,13 @@
 		"skills": ["Python", "Django", "Heroku", "Google Maps"]
 	},
 	{
-		"title": "Featured Project",
+		"title": "Machine Learning for Virginia",
 		"featured": true,
-		"description": "ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan",
-		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
+		"description": "This project explores SOL (Standards of Learning) pass rates in Virginia using machine learning techniques such as Random Forest Regression and K-means Clustering. In a final report, it compares the insights gathered from each technique.",
+		"imagePath": "/images/sol.png",
+		"githubLink": "https://github.com/EthanHaller/VAPS-Regression-Clustering",
+		"fileLink": "/ML4VA.pdf",
+		"skills": ["Random Forest Regression", "K-means Clustering", "Python"]
 	},
 	{
 		"title": "Lorem Squarepants",
@@ -40,24 +40,23 @@
 		"description": "Awarded 1st place in finance track of the 2023 HooHacks Hackathon by building a gamified credit score simulator with 3 friends in under 24 hours.",
 		"imagePath": "/images/creditscoresim.png",
 		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
+		"deploymentLink": "https://devpost.com/software/credit-score-simulation",
+		"skills": ["React", "Node"]
 	},
 	{
-		"title": "Other Project",
+		"title": "FlickVault",
 		"large": true,
-		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
-		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
+		"description": "A personal movie backlog and history written with PHP. Awarded \"Most Usable\" design in Programming Languages for Web Applications at UVA.",
+		"imagePath": "/images/flickvault.png",
+		"githubLink": "https://github.com/EthanHaller/flickvault",
+		"deploymentLink": "https://cs4640.cs.virginia.edu/ttk4ey/flickvault/",
+		"skills": ["PHP", "JavaScript", "HTML", "CSS"]
 	},
 	{
-		"title": "Other Project",
-		"description": "lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique",
-		"imagePath": "/images/hoosheard.png",
-		"githubLink": "https://github.com/",
-		"deploymentLink": "https://hoosheard.com/",
-		"skills": ["skill1", "skill2", "skill3"]
+		"title": "This Portfolio!",
+		"description": "Designed in Figma and styled solely with css.",
+		"imagePath": "/images/portfolio.png",
+		"githubLink": "https://github.com/EthanHaller/Portfolio",
+		"skills": ["React", "CSS", "Figma"]
 	}
 ]
