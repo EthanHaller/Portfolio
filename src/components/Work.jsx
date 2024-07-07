@@ -45,7 +45,7 @@ function Work({ innerRef }) {
 							<div className="work-description">
 								<h3 className="position-company">
 									{selectedWork.position} •{" "}
-									<a target="_blank" href={selectedWork.link}>
+									<a className="link" target="_blank" href={selectedWork.link}>
 										{selectedWork.company}
 									</a>
 								</h3>
