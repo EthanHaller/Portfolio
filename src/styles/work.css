@@ -185,7 +185,7 @@
 		min-width: unset;
 		border: 1px solid var(--bg-secondary);
 		background-color: var(--bg-secondary);
-		padding: 0.5rem 1rem;
+		padding: 0.5rem 0.75rem;
 		white-space: nowrap;
 	}
 
