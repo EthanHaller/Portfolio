@@ -5,11 +5,11 @@
 		"position": "Software Engineer Intern",
 		"dates": "May 2024 — Present",
 		"bullets": [
-			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
-			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
-			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh"
+			"Accelerated contributions to a new visual editor product, exceeding sprint goals with an average cycle time of 2 days, participating in daily stand-ups, code reviews via Gerrit, and tracking progress in 2-week sprints using JIRA.",
+			"Revamped API routing to support 16+ new routes and the future migration of 84 additional routes by creating a new sub-router in Go to register HTTP handlers and pass in gRPC connections to server-side code in a distributed system.",
+			"Enhanced a legacy React component by adding a new data filtering property, requiring modifications to server-side Java code and client-side support, updating 53 usages across the monorepo and deploying with no breaking changes."
 		],
-		"skills": ["React", "Java", "AI Stuff"]
+		"skills": ["Go", "React", "TypeScript", "gRPC"]
 	},
 	{
 		"company": "University of Virginia",
@@ -17,11 +17,11 @@
 		"position": "Teaching Assistant",
 		"dates": "August 2023 — Present",
 		"bullets": [
-			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
-			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh",
-			"odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat nibh"
+			"Mentored and served as project manager for 3 groups of 5 students in the Software Engineering course, providing guidance on developing a full-stack web application with Django, Heroku, PostgreSQL, and AWS S3.",
+			"Coached students to achieve above-average project grades and a 95.2% deadline success rate by adhering to the Agile Scrum methodology, leading sprint planning, and delivering constructive feedback on project guidelines.",
+			"Educated over 400 students in the Software Development Essentials course on topics such as MVC design and test-driven development by providing individual instruction during office hours and in online discussion forums."
 		],
-		"skills": ["Java", "Django"]
+		"skills": ["Django", "Heroku", "Postgres", "Java"]
 	},
 	{
 		"company": "CargoLabs",
@@ -29,10 +29,9 @@
 		"position": "Software Engineer Intern",
 		"dates": "June 2023 — August 2023",
 		"bullets": [
-			"Developed, tested, and integrated several new scalable features into production in a distributed cloud infrastructure by making daily deployments to Amazon Web Services (Lambda, S3) using Serverless Framework.",
-			"Reduced frontend page load time by 57% through the modularization of existing JavaScript files and implementation of an optimized algorithm for rendering dynamic content into a table.",
-			"Accelerated MySQL insert efficiency from exponential time to constant time by designing and executing a query optimization algorithm that resulted in a significant reduction in insert statements.",
-			"Facilitated the acquisition of a client by directly communicating to bring a new and required feature to life."
+			"Developed, tested, and integrated several new scalable features into production in a distributed cloud infrastructure by making daily deployments to Amazon Web Services (Lambda, S3) leveraging Serverless Framework.",
+			"Reduced frontend page load time by 57% by modularizing and organizing existing JavaScript files and implementing an optimized algorithm for rendering dynamic content into a table with pagination.",
+			"Accelerated MySQL insert efficiency from exponential time to constant time by designing and executing a query optimization algorithm that resulted in a significant reduction in insert statements."
 		],
 		"skills": ["HTML", "CSS", "JavaScript", "AWS"]
 	},
