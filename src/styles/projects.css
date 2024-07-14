@@ -15,8 +15,9 @@
 
 .featured-project-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	column-gap: 3rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	margin-top: 3rem;

@@ -2,7 +2,8 @@
 	padding-top: 3rem;
 	padding-bottom: 6rem;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	column-gap: 3rem;
 }
 
 .buttons-container {
