@@ -75,9 +75,6 @@ function Header({ handleScroll }) {
 					<a href="#contact" className={"nav-item" + (contactVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("contact")}>
 						Contact
 					</a>
-					<a href="/EthanHallerResume.pdf" target="_blank" className={"nav-item" + (resumeVisible ? " viewed" : " not-viewed")}>
-						Resume
-					</a>
 				</nav>
 			)}
 		</>

@@ -59,9 +59,6 @@ export default function MobileHeader({ handleScroll, revealed }) {
 					<a href="#contact" className={`nav-item-mobile ${menuVisible ? "show" : "hide"}`} onClick={() => handleMobileScroll("contact")}>
 						Contact
 					</a>
-					<a href="/EthanHallerResume.pdf" target="_blank" className={`nav-item-mobile ${menuVisible ? "show" : "hide"}`}>
-						Resume
-					</a>
 				</div>
 			</nav>
 		</>
