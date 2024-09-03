@@ -112,7 +112,8 @@
 	list-style-type: none;
 	border-radius: 30px;
 	margin-top: 0.25rem;
-	margin-right: 1rem;
+	margin-bottom: 0.5rem;
+	margin-right: 0.75rem;
 	padding: 0.5rem 0.75rem 0.5rem 0.75rem;
 	font-size: 0.875rem;
 }
