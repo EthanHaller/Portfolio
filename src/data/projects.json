@@ -1,5 +1,14 @@
 [
 	{
+		"title": "Profit with Purpose",
+		"featured": true,
+		"description": "Profit with Purpose is a professional website developed for the Profit with Purpose organization at the University of Virginia. Their goal is to deliver impact-based consulting and investment to early-stage ESG startups from diverse perspectives. This project was created in collaboration with the organization to design and populate the website's content.",
+		"imagePath": "/images/pwp.png",
+		"githubLink": "https://github.com/EthanHaller/PWP-Website",
+		"deploymentLink": "https://uvapwp.com/",
+		"skills": ["React", "Express", "Node", "Firebase", "Tailwind"]
+	},
+	{
 		"title": "HoosHeard",
 		"featured": true,
 		"description": "Welcome to HoosHeard, an anonymous social media platform designed to help your voice be heard! Every day, you are presented with a thought-provoking question to answer, but you must submit your response before you can see all other anonymous responses. Join HoosHeard to share, connect, and be heard!",
@@ -9,15 +18,6 @@
 		"skills": ["React", "Express", "Node", "MongoDB"]
 	},
 	{
-		"title": "UVAStudySpaces",
-		"featured": true,
-		"description": "Discover a catalog of study spaces at the University of Virginia, curated by students for students! Explore, search, and view unique features of various study spots across UVA's grounds. Powered by the Google Maps API.",
-		"imagePath": "/images/uvastudyspaces.png",
-		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
-		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
-		"skills": ["Python", "Django", "Heroku", "Google Maps"]
-	},
-	{
 		"title": "Machine Learning for Virginia",
 		"featured": true,
 		"description": "This project explores SOL (Standards of Learning) pass rates in Virginia using machine learning techniques such as Random Forest Regression and K-means Clustering. In a final report, it compares the insights gathered from each technique.",
@@ -25,6 +25,15 @@
 		"githubLink": "https://github.com/EthanHaller/VAPS-Regression-Clustering",
 		"fileLink": "/ML4VA.pdf",
 		"skills": ["Random Forest Regression", "K-means Clustering", "Python"]
+	},
+	{
+		"title": "UVAStudySpaces",
+		"large": true,
+		"description": "A catalog of study spaces at the University of Virginia. Explore, search, view, and submit information about various study spots around UVA. Powered by the Google Maps API.",
+		"imagePath": "/images/uvastudyspaces.png",
+		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
+		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
+		"skills": ["Django", "Python", "Heroku"]
 	},
 	{
 		"title": "Lorem Squarepants",
@@ -53,8 +62,16 @@
 		"skills": ["PHP", "JavaScript", "HTML", "CSS"]
 	},
 	{
+		"title": "Wisdom Widget",
+		"description": "An Chrome Extension to help take notes with OpenAI.",
+		"imagePath": "/images/wisdomwidget.png",
+		"githubLink": "https://github.com/EthanHaller/WisdomWidget",
+		"deploymentLink": "https://devpost.com/software/wisdom-widget",
+		"skills": ["iframe", "OpenAI", "React", "Firebase"]
+	},
+	{
 		"title": "This Portfolio!",
-		"description": "Designed in Figma and styled solely with css.",
+		"description": "Designed in Figma and styled with vanilla CSS.",
 		"imagePath": "/images/portfolio.png",
 		"githubLink": "https://github.com/EthanHaller/Portfolio",
 		"skills": ["React", "CSS", "Figma"]

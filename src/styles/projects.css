@@ -164,6 +164,7 @@
 	display: flex;
 	justify-content: space-between;
 	transition: transform 0.05s;
+	box-shadow: 5px 5px 10px var(--bg-primary);
 }
 
 .other-project-container.large {
@@ -256,7 +257,7 @@
 	}
 
 	.featured-project-container {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		margin-top: 0rem;
 		margin-bottom: 3rem;
@@ -265,7 +266,7 @@
 	}
 
 	.featured-project-container.reverse {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 	}
 

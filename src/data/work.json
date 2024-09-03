@@ -3,7 +3,7 @@
 		"company": "Yext",
 		"link": "https://www.yext.com/",
 		"position": "Software Engineer Intern",
-		"dates": "May 2024 — Present",
+		"dates": "May 2024 — August 2024",
 		"bullets": [
 			"Accelerated contributions to a new visual editor product, exceeding sprint goals with an average cycle time of 2 days, participating in daily stand-ups, code reviews via Gerrit, and tracking progress in 2-week sprints using JIRA.",
 			"Revamped API routing to support 16+ new routes and the future migration of 84 additional routes by creating a new sub-router in Go to register HTTP handlers and pass in gRPC connections to server-side code in a distributed system.",
