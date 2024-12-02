@@ -6,7 +6,16 @@
 		"imagePath": "/images/pwp.png",
 		"githubLink": "https://github.com/EthanHaller/PWP-Website",
 		"deploymentLink": "https://uvapwp.com/",
-		"skills": ["React", "Express", "Node", "Firebase", "Tailwind"]
+		"skills": ["React", "Tailwind", "Java Spring Boot", "Docker", "Kubernetes", "Firebase"]
+	},
+	{
+		"title": "UVAStudySpaces",
+		"featured": true,
+		"description": "A catalog of study spaces at the University of Virginia. Explore, search, view, and submit information about various study spots around UVA. Powered by the Google Maps API.",
+		"imagePath": "/images/uvastudyspaces.png",
+		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
+		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
+		"skills": ["Django", "Python", "Heroku", "GitHub Actions", "CI/CD"]
 	},
 	{
 		"title": "HoosHeard",
@@ -19,21 +28,12 @@
 	},
 	{
 		"title": "Machine Learning for Virginia",
-		"featured": true,
-		"description": "This project explores SOL (Standards of Learning) pass rates in Virginia using machine learning techniques such as Random Forest Regression and K-means Clustering. In a final report, it compares the insights gathered from each technique.",
+		"large": true,
+		"description": "This project explores SOL (Standards of Learning) pass rates in Virginia using machine learning techniques such as Random Forest Regression and K-means Clustering.",
 		"imagePath": "/images/sol.png",
 		"githubLink": "https://github.com/EthanHaller/VAPS-Regression-Clustering",
 		"fileLink": "/ML4VA.pdf",
 		"skills": ["Random Forest Regression", "K-means Clustering", "Python"]
-	},
-	{
-		"title": "UVAStudySpaces",
-		"large": true,
-		"description": "A catalog of study spaces at the University of Virginia. Explore, search, view, and submit information about various study spots around UVA. Powered by the Google Maps API.",
-		"imagePath": "/images/uvastudyspaces.png",
-		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
-		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
-		"skills": ["Django", "Python", "Heroku"]
 	},
 	{
 		"title": "Lorem Squarepants",

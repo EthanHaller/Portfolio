@@ -5,9 +5,11 @@
 		"position": "Software Engineer Intern",
 		"dates": "May 2024 — August 2024",
 		"bullets": [
-			"Accelerated contributions to a new visual editor product, exceeding sprint goals with an average cycle time of 2 days, participating in daily stand-ups, code reviews via Gerrit, and tracking progress in 2-week sprints using JIRA.",
-			"Revamped API routing to support 16+ new routes and the future migration of 84 additional routes by creating a new sub-router in Go to register HTTP handlers and pass in gRPC connections to server-side code in a distributed system.",
-			"Enhanced a legacy React component by adding a new data filtering property, requiring modifications to server-side Java code and client-side support, updating 53 usages across the monorepo and deploying with no breaking changes."
+			"Delivered a visual editor for Yext Pages with a team of seven developers using Gerrit for code reviews and Jira for stories.",
+			"Accelerated site initialization time by 95% through a gRPC endpoint in Go to automate repo provisioning and deployment.",
+			"Architected a HTTP router for a new Go microservice, supporting 30+ routes and the migration of 75+ routes via gRPC.",
+			"Refactored React components and Java RPC endpoints to allow data filtering, updating 63 usages in a distributed system."
+
 		],
 		"skills": ["Go", "React", "TypeScript", "gRPC"]
 	},
@@ -17,11 +19,13 @@
 		"position": "Teaching Assistant",
 		"dates": "August 2023 — Present",
 		"bullets": [
-			"Mentored and served as project manager for 3 groups of 5 students in the Software Engineering course, providing guidance on developing a full-stack web application with Django, Heroku, PostgreSQL, and AWS S3.",
-			"Coached students to achieve above-average project grades and a 95.2% deadline success rate by adhering to the Agile Scrum methodology, leading sprint planning, and delivering constructive feedback on project guidelines.",
-			"Educated over 400 students in the Software Development Essentials course on topics such as MVC design and test-driven development by providing individual instruction during office hours and in online discussion forums."
+			"Mentored 15 students in building full-stack applications with Django, AWS S3, GitHub Actions, and RESTful APIs.",
+			"Facilitated sprint planning and refinement workshops, enabling student teams to adopt and excel in agile environments.",
+			"Guided 400+ students in weekly office hours on topics such as object-oriented programming and Java testing frameworks.",
+			"Delivered instruction on core topics like TDD, REST, JUnit, Mockito, Selenium, CI/CD, and Git workflows."
+
 		],
-		"skills": ["Django", "Heroku", "Postgres", "Java"]
+		"skills": ["Python", "Java", "Django", "Heroku", "Postgres", "CI/CD"]
 	},
 	{
 		"company": "CargoLabs",
@@ -29,11 +33,12 @@
 		"position": "Software Engineer Intern",
 		"dates": "June 2023 — August 2023",
 		"bullets": [
-			"Developed, tested, and integrated several new scalable features into production in a distributed cloud infrastructure by making daily deployments to Amazon Web Services (Lambda, S3) leveraging Serverless Framework.",
-			"Reduced frontend page load time by 57% by modularizing and organizing existing JavaScript files and implementing an optimized algorithm for rendering dynamic content into a table with pagination.",
-			"Accelerated MySQL insert efficiency from exponential time to constant time by designing and executing a query optimization algorithm that resulted in a significant reduction in insert statements."
+			"Drove initial sales and secured a $30k grant by leading development on critical new features to aggregate insurance data.",
+			"Boosted frontend responsiveness by 61% (from 5.4s to 2.1s) by optimizing MySQL queries for pagination and filtering.",
+			"Enhanced scalability and maintainability by refactoring 60,000+ lines of JavaScript into AWS Lambda serverless functions."
+
 		],
-		"skills": ["HTML", "CSS", "JavaScript", "AWS"]
+		"skills": ["HTML", "CSS", "JavaScript", "AWS (Lambda, S3)"]
 	},
 	{
 		"company": "UVA Biocomplexity",
@@ -41,9 +46,10 @@
 		"position": "Research Intern",
 		"dates": "May 2022 — July 2022",
 		"bullets": [
-			"Processed COVID-19 mobility data from 1.8 million U.S. locations for a project funded by the National Science Foundation by employing custom Python and PostgreSQL scripts to manage large and diverse file formats.",
+			"Refined data quality for a National Science Foundation project by developing Python scripts to clean and format data.",
+			"Facilitated linear regression analysis by aggregating COVID-19 mobility data from 1.8 million U.S. locations.",
 			"Led a presentation to over 120 faculty and interns at the UVA Biocomplexity Institute's annual research symposium by collaborating with a mentor to research and create a final poster of all research findings."
 		],
-		"skills": ["Python", "PostgreSQL"]
+		"skills": ["Python", "NumPy", "Pandas", "PostgreSQL"]
 	}
 ]
