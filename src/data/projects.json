@@ -38,7 +38,7 @@
 	{
 		"title": "Lorem Squarepants",
 		"description": "A Lorem Ipsum generator full of quotes from the SpongeBob SquarePants show!",
-		"imagePath": "https://authy.com/wp-content/uploads/npm-logo.png",
+		"imagePath": "https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-3xqnd60o.png",
 		"githubLink": "https://github.com/EthanHaller/Lorem-Squarepants",
 		"deploymentLink": "https://www.npmjs.com/package/lorem-squarepants",
 		"skills": ["JavaScript", "npm"]

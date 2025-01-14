@@ -5,27 +5,13 @@
 		"position": "Software Engineer Intern",
 		"dates": "May 2024 — August 2024",
 		"bullets": [
-			"Delivered a visual editor for Yext Pages with a team of seven developers using Gerrit for code reviews and Jira for stories.",
+			"Enabled non-developers to create Yext Pages in seconds by building a visual editor in a team of eight with React and Go.",
 			"Accelerated site initialization time by 95% through a gRPC endpoint in Go to automate repo provisioning and deployment.",
-			"Architected a HTTP router for a new Go microservice, supporting 30+ routes and the migration of 75+ routes via gRPC.",
-			"Refactored React components and Java RPC endpoints to allow data filtering, updating 63 usages in a distributed system."
+			"Streamlined development for 100+ API routes by architecting a scalable HTTP router for a new microservice in Go.",
+			"Revitalized 63 React components in a distributed system by updating Java RPC endpoints for advanced entity filtering."
 
 		],
 		"skills": ["Go", "React", "TypeScript", "gRPC"]
-	},
-	{
-		"company": "University of Virginia",
-		"link": "https://engineering.virginia.edu/departments/computer-science",
-		"position": "Teaching Assistant",
-		"dates": "August 2023 — Present",
-		"bullets": [
-			"Mentored 15 students in building full-stack applications with Django, AWS S3, GitHub Actions, and RESTful APIs.",
-			"Facilitated sprint planning and refinement workshops, enabling student teams to adopt and excel in agile environments.",
-			"Guided 400+ students in weekly office hours on topics such as object-oriented programming and Java testing frameworks.",
-			"Delivered instruction on core topics like TDD, REST, JUnit, Mockito, Selenium, CI/CD, and Git workflows."
-
-		],
-		"skills": ["Python", "Java", "Django", "Heroku", "Postgres", "CI/CD"]
 	},
 	{
 		"company": "CargoLabs",
@@ -33,12 +19,26 @@
 		"position": "Software Engineer Intern",
 		"dates": "June 2023 — August 2023",
 		"bullets": [
-			"Drove initial sales and secured a $30k grant by leading development on critical new features to aggregate insurance data.",
-			"Boosted frontend responsiveness by 61% (from 5.4s to 2.1s) by optimizing MySQL queries for pagination and filtering.",
-			"Enhanced scalability and maintainability by refactoring 60,000+ lines of JavaScript into AWS Lambda serverless functions."
+			"Secured $30k in funding by leading development of an insurance claim analytics feature utilizing JavaScript and MySQL.",
+			"Boosted frontend response time from 5.4s to 2.1s by optimizing MySQL query algorithms for filtering and pagination.",
+			"Enhanced backend maintainability by refactoring 60,000+ lines of JavaScript into AWS Lambda serverless functions."
 
 		],
 		"skills": ["HTML", "CSS", "JavaScript", "AWS (Lambda, S3)"]
+	},
+	{
+		"company": "University of Virginia",
+		"link": "https://engineering.virginia.edu/departments/computer-science",
+		"position": "Teaching Assistant",
+		"dates": "August 2023 — Present",
+		"bullets": [
+			"Mentor 15 students each semester in building full-stack applications with Django, AWS S3, CI/CD, and RESTful APIs.",
+			"Facilitate sprint planning and refinement workshops to enable student teams to excel in agile environments.",
+			"Guide 400+ students during weekly office hours on object-oriented programming and Java testing frameworks.",
+			"Simplify concepts such as OOP, TDD, REST, design patterns, and Git to strengthen practical software skills for students."
+
+		],
+		"skills": ["Python", "Java", "Django", "Heroku", "Postgres", "CI/CD"]
 	},
 	{
 		"company": "UVA Biocomplexity",
@@ -48,7 +48,7 @@
 		"bullets": [
 			"Refined data quality for a National Science Foundation project by developing Python scripts to clean and format data.",
 			"Facilitated linear regression analysis by aggregating COVID-19 mobility data from 1.8 million U.S. locations.",
-			"Led a presentation to over 120 faculty and interns at the UVA Biocomplexity Institute's annual research symposium by collaborating with a mentor to research and create a final poster of all research findings."
+			"Led a presentation to over 120 faculty and interns at the UVA Biocomplexity Institute's annual research symposium."
 		],
 		"skills": ["Python", "NumPy", "Pandas", "PostgreSQL"]
 	}
