@@ -9,6 +9,14 @@
 		"skills": ["React", "Tailwind", "Java Spring Boot", "Docker", "Kubernetes", "Firebase"]
 	},
 	{
+		"title": "PeerReview",
+		"featured": true,
+		"description": "PeerReview is a two-sided review platform developed to be used by over 300 students each semester in the Software Engineering course at The University of Virginia. It allows students to anonymously review their teammates and professors to easily search for teams, reviews, and students.",
+		"imagePath": "/images/peerreview.png",
+		"githubLink": "https://github.com/param23403/PeerReview",
+		"skills": ["React", "TypeScript", "Express", "Serverless-HTTP", "Firebase"]
+	},
+	{
 		"title": "UVAStudySpaces",
 		"featured": true,
 		"description": "A catalog of study spaces at the University of Virginia. Explore, search, view, and submit information about various study spots around UVA. Powered by the Google Maps API.",
@@ -18,9 +26,18 @@
 		"skills": ["Django", "Python", "Heroku", "GitHub Actions", "CI/CD"]
 	},
 	{
+		"title": "FlickVault",
+		"large": true,
+		"description": "A personal movie backlog and history written with PHP. Awarded \"Most Usable\" design in Programming Languages for Web Applications at UVA.",
+		"imagePath": "/images/flickvault.png",
+		"githubLink": "https://github.com/EthanHaller/flickvault",
+		"deploymentLink": "https://cs4640.cs.virginia.edu/ttk4ey/flickvault/",
+		"skills": ["PHP", "JavaScript", "HTML", "CSS"]
+	},
+	{
 		"title": "HoosHeard",
-		"featured": true,
-		"description": "Welcome to HoosHeard, an anonymous social media platform designed to help your voice be heard! Every day, you are presented with a thought-provoking question to answer, but you must submit your response before you can see all other anonymous responses. Join HoosHeard to share, connect, and be heard!",
+		"large": true,
+		"description": "Welcome to HoosHeard, an anonymous social media platform with daily prompts to help your voice be heard!",
 		"imagePath": "/images/hoosheard.png",
 		"githubLink": "https://github.com/EthanHaller/HoosHeard",
 		"deploymentLink": "https://hoosheard.com/",
@@ -51,15 +68,6 @@
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://devpost.com/software/credit-score-simulation",
 		"skills": ["React", "Node"]
-	},
-	{
-		"title": "FlickVault",
-		"large": true,
-		"description": "A personal movie backlog and history written with PHP. Awarded \"Most Usable\" design in Programming Languages for Web Applications at UVA.",
-		"imagePath": "/images/flickvault.png",
-		"githubLink": "https://github.com/EthanHaller/flickvault",
-		"deploymentLink": "https://cs4640.cs.virginia.edu/ttk4ey/flickvault/",
-		"skills": ["PHP", "JavaScript", "HTML", "CSS"]
 	},
 	{
 		"title": "Wisdom Widget",

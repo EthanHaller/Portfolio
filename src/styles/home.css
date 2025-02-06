@@ -85,8 +85,7 @@ h1 {
 	margin-bottom: auto;
 	margin-inline: 2rem;
 	padding-bottom: 3rem;
-	border-bottom-left-radius: 30%;
-	border-bottom-right-radius: 35%;
+	border-radius: 45%;
 }
 
 @media (max-width: 1000px) {
