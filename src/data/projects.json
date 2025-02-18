@@ -11,7 +11,7 @@
 	{
 		"title": "PeerReview",
 		"featured": true,
-		"description": "PeerReview is a two-sided review platform developed to be used by over 300 students each semester in the Software Engineering course at The University of Virginia. It allows students to anonymously review their teammates and professors to easily search for teams, reviews, and students.",
+		"description": "PeerReview is a two-sided review platform developed to be used by over 300 students each semester in the Software Engineering course at The University of Virginia. It allows students to anonymously review their teammates and professors to easily search for teams, reviews, and students. Beta version out soon!",
 		"imagePath": "/images/peerreview.png",
 		"githubLink": "https://github.com/param23403/PeerReview",
 		"skills": ["React", "TypeScript", "Express", "Serverless-HTTP", "Firebase"]

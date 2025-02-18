@@ -166,6 +166,7 @@
 
 	.work-description-container {
 		width: auto;
+		padding-inline: 2rem;
 	}
 
 	.line {
