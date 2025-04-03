@@ -1,8 +1,8 @@
 import { FaGithub } from "react-icons/fa"
-import { FaRegFileAlt } from "react-icons/fa";
+import { FaRegFileAlt } from "react-icons/fa"
 import { LuExternalLink } from "react-icons/lu"
 import projectData from "../data/projects.json"
-import "../styles/projects.css"
+import "../styles/projects.sass"
 
 function Projects({ innerRef }) {
 	const featuredProjects = projectData.filter((project) => project.featured)
@@ -14,16 +14,16 @@ function Projects({ innerRef }) {
 				<h3 className={"featured-project-title" + (index % 2 === 1 ? " reverse" : "")}>{project.title}</h3>
 				<ul className={"featured-project-links" + (index % 2 === 1 ? " reverse" : "")}>
 					{project.deploymentLink && (
-						<a aria-label="View Site" target="_blank" href={project.deploymentLink} className="featured-project-link">
+						<a aria-label="View Site" target="_blank" rel="noopener noreferrer" href={project.deploymentLink} className="featured-project-link">
 							<LuExternalLink />
 						</a>
 					)}
 					{project.fileLink && (
-						<a aria-label="View Report" target="_blank" href="/ML4VA.pdf" className="featured-project-link">
+						<a aria-label="View Report" target="_blank" rel="noopener noreferrer" href="/ML4VA.pdf" className="featured-project-link">
 							<FaRegFileAlt />
 						</a>
 					)}
-					<a aria-label="View Repository" target="_blank" href={project.githubLink} className="featured-project-link">
+					<a aria-label="View Repository" target="_blank" rel="noopener noreferrer" href={project.githubLink} className="featured-project-link">
 						<FaGithub />
 					</a>
 				</ul>
@@ -37,7 +37,7 @@ function Projects({ innerRef }) {
 				</ul>
 			</div>
 			<div className="featured-project-image-wrapper">
-				<img className="featured-project-image" src={project.imagePath} />
+				<img alt={project.title} className="featured-project-image" src={project.imagePath} />
 			</div>
 		</div>
 	))
@@ -48,18 +48,18 @@ function Projects({ innerRef }) {
 				<div className="card-header">
 					<h4 className="project-title">{project.title}</h4>
 					{project.deploymentLink && (
-						<a target="_blank" href={project.deploymentLink} className="project-link">
+						<a aria-label="View Project" target="_blank" rel="noopener noreferrer" href={project.deploymentLink} className="project-link">
 							<LuExternalLink />
 						</a>
 					)}
-					<a target="_blank" href={project.githubLink} className="project-link">
+					<a aria-label="View Repository" target="_blank" rel="noopener noreferrer" href={project.githubLink} className="project-link">
 						<FaGithub />
 					</a>
 				</div>
 				<p className="project-description">{project.description}</p>
 			</div>
 			<div className={"card-right" + (project.large ? " large" : "")}>
-				<img className={"project-image" + (project.large ? " large" : "")} src={project.imagePath} />
+				<img alt={project.title} className={"project-image" + (project.large ? " large" : "")} src={project.imagePath} />
 			</div>
 		</div>
 	))

@@ -1,0 +1,139 @@
+.header
+  position: sticky
+  top: 0px
+  height: 4rem
+  background-color: transparent
+  z-index: 2
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1)
+
+  &.hide
+    top: -4rem
+
+.header-logo-wrapper
+  margin-right: auto
+  margin-left: 1rem
+  display: flex
+  justify-content: center
+  align-items: center
+
+.header-logo
+  max-height: 4rem
+  width: auto
+
+.nav-item
+  color: var(--text-primary)
+  padding: 0.75rem
+  margin-inline: 0.25rem
+  text-decoration: none
+  text-transform: uppercase
+
+  &:last-child
+    margin-right: 1rem
+
+  &:hover
+    color: var(--accent-primary)
+
+.mobile-header
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-end
+  position: sticky
+  top: 0
+  width: 100vw
+  background-color: transparent
+  backdrop-filter: blur(5px)
+  z-index: 5
+
+  &.expanded
+    position: fixed
+    top: 0
+    height: 100vh
+    backdrop-filter: none
+
+.logo-menu-wrapper
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.spacer
+  &.show
+    height: 4rem
+
+.nav-overlay
+  position: fixed
+  top: -100vh
+  height: 100vh
+  width: 100vw
+  z-index: 2
+  background-color: var(--bg-primary)
+  opacity: 0.7
+  transition: top 0.5s ease
+
+  &.show
+    top: 0
+    background-color: var(--bg-primary)
+    opacity: 0.95
+
+.menu-icon
+  color: var(--text-primary)
+  cursor: pointer
+  border: none
+  background: none
+  font: inherit
+  color: inherit
+  display: flex
+  align-items: center
+  justify-content: center
+  appearance: none
+  padding: 1rem
+  font-size: 1.5rem
+
+  &:active
+    background-color: transparent
+
+
+.nav-items
+  position: absolute
+  top: 5rem
+  z-index: 1000
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  transition: transform 0.5s ease
+
+  &.hide
+    transform: translateY(-100vh)
+
+.nav-item-mobile
+  color: var(--text-primary)
+  width: 50vw
+  text-align: center
+  padding: 0.75rem
+  margin-inline: 0.25rem
+  text-decoration: none
+  text-transform: uppercase
+  margin: 1rem
+  border: 2px solid var(--text-primary)
+  border-radius: 30px
+  transition: transform 0.5s ease
+
+  &.hide
+    opacity: 0
+    pointer-events: none
+    position: absolute
+
+  &.show
+    opacity: 1
+    pointer-events: auto
+    position: static
+
+  &:hover
+    color: var(--accent-primary)
+    border-color: var(--accent-primary)
+    transform: translate(0, -0.5rem)

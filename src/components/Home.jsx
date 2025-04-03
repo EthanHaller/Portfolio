@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import "..//styles/home.css"
+import "..//styles/home.sass"
 
 function Home({ innerRef }) {
 	const [helloTextVisible, setHelloTextVisible] = useState(false)
@@ -8,19 +8,19 @@ function Home({ innerRef }) {
 	const [avatarVisible, setAvatarVisible] = useState(false)
 
 	useEffect(() => {
-		setTimeout(() => {
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 			setHelloTextVisible(true)
-		}, 4700)
-		setTimeout(() => {
 			setNametVisible(true)
-		}, 4900)
-		setTimeout(() => {
 			setMottoTextVisible(true)
-		}, 5100)
-		setTimeout(() => {
 			setAvatarVisible(true)
-		}, 5300)
-	})
+			return
+		}
+
+		setTimeout(() => setHelloTextVisible(true), 4700)
+		setTimeout(() => setNametVisible(true), 4900)
+		setTimeout(() => setMottoTextVisible(true), 5100)
+		setTimeout(() => setAvatarVisible(true), 5300)
+	}, [])
 
 	return (
 		<>
@@ -30,7 +30,7 @@ function Home({ innerRef }) {
 					<h1 className={"name" + (nameVisible ? " viewed" : " not-viewed")}>Ethan Haller</h1>
 					<p className={"motto-text" + (mottoTextVisible ? " viewed" : " not-viewed")}>
 						I am a versatile software engineer with a passion for full-stack development. Most recently, I worked with React, TypeScript, and Go at{" "}
-						<a className="link" href="https://www.yext.com/" target="_blank">
+						<a className="link" href="https://www.yext.com/" target="_blank" rel="noopener noreferrer">
 							Yext
 						</a>
 						.

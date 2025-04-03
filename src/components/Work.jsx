@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import workData from "../data/work.json"
-import "../styles/work.css"
+import "../styles/work.sass"
 
 function Work({ innerRef }) {
 	const [workShowing, setWorkShowing] = useState("Yext")
@@ -8,7 +8,7 @@ function Work({ innerRef }) {
 	const [fade, setFade] = useState(false)
 
 	const showWork = (workTitle) => {
-		if(buttonSelected === workTitle) return;
+		if (buttonSelected === workTitle) return
 		setButtonSelected(workTitle)
 		setFade(true)
 		setTimeout(() => {
@@ -16,17 +16,6 @@ function Work({ innerRef }) {
 			setFade(false)
 		}, 150)
 	}
-
-	const workButtons = workData.map((workItem) => (
-		<div
-			key={workItem.company}
-			className={`button-wrapper ${buttonSelected === workItem.company ? "active" : ""}`}
-			onClick={() => showWork(workItem.company)}
-		>
-			<span className="line"></span>
-			<button>{workItem.company}</button>
-		</div>
-	))
 
 	const selectedWork = workData.find((workItem) => workItem.company === workShowing)
 
@@ -38,14 +27,33 @@ function Work({ innerRef }) {
 				<span className="title-line second"></span>
 			</div>
 			<div className="work-container not-yet-viewed">
-				<div className="buttons-container">{workButtons}</div>
-				<div className={`work-description-container ${fade ? "fade" : ""}`}>
+				<div className="buttons-container">
+					{workData.map((workItem) => (
+						<div key={workItem.company} className="button-wrapper">
+							<span className="line" aria-hidden="true"></span>
+							<button
+								className={buttonSelected === workItem.company ? "active" : ""}
+								onClick={() => showWork(workItem.company)}
+								aria-pressed={buttonSelected === workItem.company}
+								aria-label={`Show experience at ${workItem.company}`}
+							>
+								{workItem.company}
+							</button>
+						</div>
+					))}
+				</div>
+				<div
+					className={`work-description-container ${fade ? "fade" : ""}`}
+					role="region"
+					aria-live="polite"
+					aria-label={`Details about work at ${selectedWork?.company}`}
+				>
 					{selectedWork && (
 						<>
 							<div className="work-description">
 								<h3 className="position-company">
 									{selectedWork.position} •{" "}
-									<a className="link" target="_blank" href={selectedWork.link}>
+									<a className="link" target="_blank" href={selectedWork.link} rel="noopener noreferrer">
 										{selectedWork.company}
 									</a>
 								</h3>

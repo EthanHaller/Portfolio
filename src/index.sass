@@ -1,0 +1,89 @@
+:root
+  --bg-primary: #08151d
+  --bg-secondary: #0f232f
+  --bg-tertiary: #183b51
+  --accent-primary: #9cdf94
+  --accent-secondary: #4dbb4a
+  --text-primary: #ebebeb
+  --text-secondary: #879098
+  font-family: "Inter", sans-serif
+  color: var(--text-primary)
+
+@font-face
+  font-family: "Inter"
+  src: url("./fonts/Inter-VariableFont_slnt-wght.woff") format("woff")
+  font-weight: normal
+  font-style: normal
+
+body
+  background-color: var(--bg-primary)
+  margin: 0
+
+.link
+  position: relative
+  color: var(--accent-primary)
+  text-decoration: none
+  transition: all 0.5s ease
+
+  &::before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: var(--accent-primary)
+    transform: scaleX(0)
+    transition: transform 0.3s ease
+
+  &:hover::before
+    transform: scaleX(1)
+
+.container
+  max-width: 1000px
+  min-width: 80vw
+  margin-inline: auto
+  padding-inline: 2rem
+  padding-bottom: 3rem
+
+.not-yet-viewed,
+.not-viewed
+  opacity: 0
+  transform: translateY(40px)
+  filter: blur(5px)
+  transition: all 0.5s ease-in-out
+
+.viewed
+  opacity: 1
+  transform: translateY(0)
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+
+.not-viewed
+  &:nth-child(2)
+    transition-delay: 200ms
+  &:nth-child(3)
+    transition-delay: 400ms
+  &:nth-child(4)
+    transition-delay: 600ms
+  &:nth-child(5)
+    transition-delay: 800ms
+
+@media (prefers-reduced-motion)
+  .not-yet-viewed
+    opacity: 1
+    transition: none
+
+.skip-link
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 8px;
+  z-index: 1000;
+  transition: top 0.3s;
+
+
+  &:focus 
+    top: 0;
+

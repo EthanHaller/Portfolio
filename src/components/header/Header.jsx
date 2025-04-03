@@ -1,9 +1,7 @@
 //https://www.codemzy.com/blog/react-sticky-header-disappear-scroll
 
 import { useState, useEffect } from "react"
-import { IoMenu } from "react-icons/io5"
-import { IoCloseOutline } from "react-icons/io5"
-import "../../styles/header.css"
+import "../../styles/header.sass"
 import MobileHeader from "./MobileHeader"
 
 function Header({ handleScroll }) {
@@ -31,6 +29,18 @@ function Header({ handleScroll }) {
 	useEffect(() => {
 		const navItems = ["home", "work", "projects", "contact", "resume"]
 
+		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+
+		if (prefersReducedMotion) {
+			setHomeVisible(true)
+			setResumeVisible(true)
+			setWorkVisible(true)
+			setProjectsVisible(true)
+			setContactVisible(true)
+			setRevealed(true)
+			return
+		}
+
 		navItems.forEach((item, index) => {
 			setTimeout(() => {
 				switch (item) {
@@ -49,11 +59,10 @@ function Header({ handleScroll }) {
 					case "contact":
 						setContactVisible(true)
 						break
-					default:
-						break
 				}
 			}, index * 200 + 3500)
 		})
+
 		setRevealed(true)
 	}, [])
 
@@ -62,17 +71,17 @@ function Header({ handleScroll }) {
 			{isMobile ? (
 				<MobileHeader handleScroll={handleScroll} revealed={revealed} />
 			) : (
-				<nav className={"header" + (scrollDirection === "down" ? " hide" : " show")}>
+				<nav className={"header" + (scrollDirection === "down" ? " hide" : " show")} role="navigation" aria-label="Main navigation">
 					<a href="#home" className="header-logo-wrapper" onClick={() => handleScroll("home")}>
-						<img src="/images/EHLogo.png" alt="App Logo" className={"header-logo" + (homeVisible ? " viewed" : " not-viewed")} />
+						<img src="/images/EHLogo.png" alt="Ethan Haller Logo" className={`header-logo${homeVisible ? " viewed" : " not-viewed"}`} />
 					</a>
-					<a href="#work" className={"nav-item" + (workVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("work")}>
+					<a href="#work" className={`nav-item${workVisible ? " viewed" : " not-viewed"}`} onClick={() => handleScroll("work")}>
 						Work
 					</a>
-					<a href="#projects" className={"nav-item" + (projectsVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("projects")}>
+					<a href="#projects" className={`nav-item${projectsVisible ? " viewed" : " not-viewed"}`} onClick={() => handleScroll("projects")}>
 						Projects
 					</a>
-					<a href="#contact" className={"nav-item" + (contactVisible ? " viewed" : " not-viewed")} onClick={() => handleScroll("contact")}>
+					<a href="#contact" className={`nav-item${contactVisible ? " viewed" : " not-viewed"}`} onClick={() => handleScroll("contact")}>
 						Contact
 					</a>
 				</nav>

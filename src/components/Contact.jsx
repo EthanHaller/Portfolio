@@ -1,8 +1,7 @@
-import { useState } from "react"
 import { IoMail } from "react-icons/io5"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
-import "../styles/contact.css"
+import "../styles/contact.sass"
 
 function Contact({ innerRef }) {
 	return (
@@ -20,15 +19,42 @@ function Contact({ innerRef }) {
 					</p>
 				</div>
 				<ul className="contact-list not-yet-viewed">
-					<a href="mailto:ethanhaller02@gmail.com" target="_blank" title="Email" className="contact-link">
-						<IoMail className="contact-icon" />
-					</a>
-					<a href="https://github.com/EthanHaller" target="_blank" title="GitHub" className="contact-link">
-						<FaGithub className="contact-icon" />
-					</a>
-					<a href="https://www.linkedin.com/in/ethanhaller/" target="_blank" title="LinkedIn" className="contact-link">
-						<FaLinkedin className="contact-icon" />
-					</a>
+					<li>
+						<a
+							href="mailto:ethanhaller02@gmail.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							title="Email"
+							className="contact-link"
+							aria-label="Send an email to ethanhaller02@gmail.com"
+						>
+							<IoMail className="contact-icon" aria-hidden="true" />
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://github.com/EthanHaller"
+							target="_blank"
+							rel="noopener noreferrer"
+							title="GitHub"
+							className="contact-link"
+							aria-label="View Ethan's GitHub profile"
+						>
+							<FaGithub className="contact-icon" aria-hidden="true" />
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/ethanhaller/"
+							target="_blank"
+							rel="noopener noreferrer"
+							title="LinkedIn"
+							className="contact-link"
+							aria-label="View Ethan's LinkedIn profile"
+						>
+							<FaLinkedin className="contact-icon" aria-hidden="true" />
+						</a>
+					</li>
 				</ul>
 			</section>
 		</>

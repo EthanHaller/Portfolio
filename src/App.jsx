@@ -50,6 +50,15 @@ function App() {
 	}, [])
 
 	useEffect(() => {
+		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+		if (prefersReducedMotion) {
+			document.querySelectorAll(".not-yet-viewed").forEach((el) => {
+				el.classList.remove("not-yet-viewed")
+				el.classList.add("viewed")
+			})
+			return
+		}
+
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -62,12 +71,14 @@ function App() {
 			{ threshold: 0.4 }
 		)
 
-		const hiddenElements = document.querySelectorAll(".not-yet-viewed")
-		hiddenElements.forEach((element) => observer.observe(element))
+		document.querySelectorAll(".not-yet-viewed").forEach((el) => observer.observe(el))
 	}, [])
 
 	return (
 		<>
+			<a href="#main" class="skip-link">
+				Skip to main content
+			</a>
 			<style>
 				{`
 					body {
@@ -81,11 +92,13 @@ function App() {
 				`}
 			</style>
 			<Preloader />
-			<Header handleScroll={handleScroll} />
-			<Home innerRef={homeRef} />
-			<Work innerRef={workRef} />
-			<Projects innerRef={projectsRef} />
-			<Contact innerRef={contactRef} />
+			<main id="main">
+				<Header handleScroll={handleScroll} />
+				<Home innerRef={homeRef} />
+				<Work innerRef={workRef} />
+				<Projects innerRef={projectsRef} />
+				<Contact innerRef={contactRef} />
+			</main>
 		</>
 	)
 }
