@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react"
 import "../styles/preloader.sass"
+import useIsMobile from "../hooks/useIsMobile"
 
 function Preloader() {
 	const [bgHidden, setBgHidden] = useState(false)
+	const isMobile = useIsMobile()
 
 	useEffect(() => {
 		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
 
-		if (prefersReducedMotion) {
+		if (prefersReducedMotion || isMobile) {
 			setBgHidden(true)
 			document.body.style.overflow = null
 			return

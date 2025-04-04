@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react"
 import "../../styles/header.sass"
 import MobileHeader from "./MobileHeader"
+import useIsMobile from "../../hooks/useIsMobile"
 
 function Header({ handleScroll }) {
-	const [isMobile, setIsMobile] = useState(window.innerWidth <= 725)
 	const scrollDirection = useScrollDirection()
 	const [homeVisible, setHomeVisible] = useState(false)
 	const [resumeVisible, setResumeVisible] = useState(false)
@@ -13,25 +13,14 @@ function Header({ handleScroll }) {
 	const [projectsVisible, setProjectsVisible] = useState(false)
 	const [contactVisible, setContactVisible] = useState(false)
 	const [revealed, setRevealed] = useState(false)
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth <= 725)
-		}
-
-		window.addEventListener("resize", handleResize)
-
-		return () => {
-			window.removeEventListener("resize", handleResize)
-		}
-	}, [])
+	const isMobile = useIsMobile()
 
 	useEffect(() => {
 		const navItems = ["home", "work", "projects", "contact", "resume"]
 
 		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
 
-		if (prefersReducedMotion) {
+		if (prefersReducedMotion || isMobile) {
 			setHomeVisible(true)
 			setResumeVisible(true)
 			setWorkVisible(true)
@@ -64,7 +53,7 @@ function Header({ handleScroll }) {
 		})
 
 		setRevealed(true)
-	}, [])
+	}, [isMobile])
 
 	return (
 		<>

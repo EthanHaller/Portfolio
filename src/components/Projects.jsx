@@ -12,7 +12,7 @@ function Projects({ innerRef }) {
 		<div key={index} className={"not-yet-viewed featured-project-container" + (index % 2 === 1 ? " reverse" : "")}>
 			<div className="featured-project-information">
 				<h3 className={"featured-project-title" + (index % 2 === 1 ? " reverse" : "")}>{project.title}</h3>
-				<ul className={"featured-project-links" + (index % 2 === 1 ? " reverse" : "")}>
+				<div className={"featured-project-links" + (index % 2 === 1 ? " reverse" : "")}>
 					{project.deploymentLink && (
 						<a aria-label="View Site" target="_blank" rel="noopener noreferrer" href={project.deploymentLink} className="featured-project-link">
 							<LuExternalLink />
@@ -26,7 +26,7 @@ function Projects({ innerRef }) {
 					<a aria-label="View Repository" target="_blank" rel="noopener noreferrer" href={project.githubLink} className="featured-project-link">
 						<FaGithub />
 					</a>
-				</ul>
+				</div>
 				<p className="featured-project-description">{project.description}</p>
 				<ul className={"skills-list projects" + (index % 2 === 1 ? " reverse" : "")}>
 					{project.skills.map((skill, index) => (
@@ -46,7 +46,7 @@ function Projects({ innerRef }) {
 		<div target="_blank" key={index} className={"not-yet-viewed other-project-container" + (project.large ? " large" : "")}>
 			<div className={"card-left" + (project.large ? " large" : "")}>
 				<div className="card-header">
-					<h4 className="project-title">{project.title}</h4>
+					<h3 className="project-title">{project.title}</h3>
 					{project.deploymentLink && (
 						<a aria-label="View Project" target="_blank" rel="noopener noreferrer" href={project.deploymentLink} className="project-link">
 							<LuExternalLink />

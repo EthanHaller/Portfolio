@@ -5,6 +5,7 @@ import Header from "./components/header/Header"
 import Work from "./components/Work"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import useIsMobile from "./hooks/useIsMobile"
 
 function App() {
 	const bodyRef = useRef(document.body)
@@ -12,6 +13,7 @@ function App() {
 	const workRef = useRef(null)
 	const projectsRef = useRef(null)
 	const contactRef = useRef(null)
+	const isMobile = useIsMobile()
 
 	const handleScroll = (location) => {
 		switch (location) {
@@ -31,9 +33,10 @@ function App() {
 	}
 
 	useEffect(() => {
+		if (isMobile) return
+
 		const updateMousePosition = (event) => {
 			const { clientX, clientY } = event
-
 			const adjustedX = clientX + window.scrollX
 			const adjustedY = clientY + window.scrollY
 
@@ -47,10 +50,11 @@ function App() {
 		return () => {
 			window.removeEventListener("mousemove", updateMousePosition)
 		}
-	}, [])
+	}, [isMobile])
 
 	useEffect(() => {
 		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+
 		if (prefersReducedMotion) {
 			document.querySelectorAll(".not-yet-viewed").forEach((el) => {
 				el.classList.remove("not-yet-viewed")
@@ -72,26 +76,31 @@ function App() {
 		)
 
 		document.querySelectorAll(".not-yet-viewed").forEach((el) => observer.observe(el))
-	}, [])
+
+		return () => observer.disconnect()
+	}, [isMobile])
 
 	return (
 		<>
-			<a href="#main" class="skip-link">
+			<a href="#main" className="skip-link">
 				Skip to main content
 			</a>
-			<style>
-				{`
-					body {
-						background-image: radial-gradient(
-						circle farthest-side at var(--x) var(--y),
-						transparent,
-						var(--bg-secondary) 0%,
-						transparent 35vw
-						);
-					}
-				`}
-			</style>
-			<Preloader />
+			{!isMobile && (
+				<style>
+					{`
+						body {
+							background-image: radial-gradient(
+								circle farthest-side at var(--x) var(--y),
+								transparent,
+								var(--bg-secondary) 0%,
+								transparent 35vw
+							);
+						}
+					`}
+				</style>
+			)}
+
+			{!isMobile && <Preloader />}
 			<main id="main">
 				<Header handleScroll={handleScroll} />
 				<Home innerRef={homeRef} />

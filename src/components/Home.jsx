@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
 import "..//styles/home.sass"
+import useIsMobile from "../hooks/useIsMobile"
 
 function Home({ innerRef }) {
 	const [helloTextVisible, setHelloTextVisible] = useState(false)
 	const [nameVisible, setNametVisible] = useState(false)
 	const [mottoTextVisible, setMottoTextVisible] = useState(false)
 	const [avatarVisible, setAvatarVisible] = useState(false)
+	const isMobile = useIsMobile()
 
 	useEffect(() => {
-		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || isMobile) {
 			setHelloTextVisible(true)
 			setNametVisible(true)
 			setMottoTextVisible(true)
@@ -38,7 +40,7 @@ function Home({ innerRef }) {
 				</div>
 				<div className={"home-picture" + (avatarVisible ? " viewed" : " not-viewed")}>
 					<span />
-					<img src="/images/headshot.png" alt="avatar" className="avatar"></img>
+					<img src="/images/headshot.webp" alt="avatar" className="avatar"></img>
 				</div>
 			</section>
 		</>

@@ -3,7 +3,7 @@
 		"title": "Profit with Purpose",
 		"featured": true,
 		"description": "Profit with Purpose is a professional website developed for the Profit with Purpose organization at the University of Virginia. Their goal is to deliver impact-based consulting and investment to early-stage ESG startups from diverse perspectives. This project was created in collaboration with the organization to design and populate the website's content.",
-		"imagePath": "/images/pwp.png",
+		"imagePath": "/images/pwp.webp",
 		"githubLink": "https://github.com/EthanHaller/PWP-Website",
 		"deploymentLink": "https://uvapwp.com/",
 		"skills": ["React", "Tailwind", "Java Spring Boot", "Docker", "Kubernetes", "Firebase"]
@@ -12,7 +12,7 @@
 		"title": "PeerReview",
 		"featured": true,
 		"description": "PeerReview is a two-sided review platform developed to be used by over 300 students each semester in the Software Engineering course at The University of Virginia. It allows students to anonymously review their teammates and professors to easily search for teams, reviews, and students. Beta version out soon!",
-		"imagePath": "/images/peerreview.png",
+		"imagePath": "/images/peerreview.webp",
 		"githubLink": "https://github.com/param23403/PeerReview",
 		"skills": ["React", "TypeScript", "Express", "Serverless-HTTP", "Firebase"]
 	},
@@ -20,7 +20,7 @@
 		"title": "UVAStudySpaces",
 		"featured": true,
 		"description": "A catalog of study spaces at the University of Virginia. Explore, search, view, and submit information about various study spots around UVA. Powered by the Google Maps API.",
-		"imagePath": "/images/uvastudyspaces.png",
+		"imagePath": "/images/uvastudyspaces.webp",
 		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
 		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
 		"skills": ["Django", "Python", "Heroku", "GitHub Actions", "CI/CD"]
@@ -29,7 +29,7 @@
 		"title": "FlickVault",
 		"large": true,
 		"description": "A personal movie backlog and history written with PHP. Awarded \"Most Usable\" design in Programming Languages for Web Applications at UVA.",
-		"imagePath": "/images/flickvault.png",
+		"imagePath": "/images/flickvault.webp",
 		"githubLink": "https://github.com/EthanHaller/flickvault",
 		"deploymentLink": "https://cs4640.cs.virginia.edu/ttk4ey/flickvault/",
 		"skills": ["PHP", "JavaScript", "HTML", "CSS"]
@@ -38,7 +38,7 @@
 		"title": "HoosHeard",
 		"large": true,
 		"description": "Welcome to HoosHeard, an anonymous social media platform with daily prompts to help your voice be heard!",
-		"imagePath": "/images/hoosheard.png",
+		"imagePath": "/images/hoosheard.webp",
 		"githubLink": "https://github.com/EthanHaller/HoosHeard",
 		"deploymentLink": "https://hoosheard.com/",
 		"skills": ["React", "Express", "Node", "MongoDB"]
@@ -47,7 +47,7 @@
 		"title": "Machine Learning for Virginia",
 		"large": true,
 		"description": "This project explores SOL (Standards of Learning) pass rates in Virginia using machine learning techniques such as Random Forest Regression and K-means Clustering.",
-		"imagePath": "/images/sol.png",
+		"imagePath": "/images/sol.webp",
 		"githubLink": "https://github.com/EthanHaller/VAPS-Regression-Clustering",
 		"fileLink": "/ML4VA.pdf",
 		"skills": ["Random Forest Regression", "K-means Clustering", "Python"]
@@ -64,7 +64,7 @@
 		"title": "Credit Score Simulator",
 		"large": true,
 		"description": "Awarded 1st place in finance track of the 2023 HooHacks Hackathon by building a gamified credit score simulator with 3 friends in under 24 hours.",
-		"imagePath": "/images/creditscoresim.png",
+		"imagePath": "/images/creditscoresim.webp",
 		"githubLink": "https://github.com/",
 		"deploymentLink": "https://devpost.com/software/credit-score-simulation",
 		"skills": ["React", "Node"]
@@ -72,7 +72,7 @@
 	{
 		"title": "Wisdom Widget",
 		"description": "An Chrome Extension to help take notes with OpenAI.",
-		"imagePath": "/images/wisdomwidget.png",
+		"imagePath": "/images/wisdomwidget.webp",
 		"githubLink": "https://github.com/EthanHaller/WisdomWidget",
 		"deploymentLink": "https://devpost.com/software/wisdom-widget",
 		"skills": ["iframe", "OpenAI", "React", "Firebase"]
@@ -80,7 +80,7 @@
 	{
 		"title": "This Portfolio!",
 		"description": "Designed in Figma and styled with vanilla CSS.",
-		"imagePath": "/images/portfolio.png",
+		"imagePath": "/images/portfolio.webp",
 		"githubLink": "https://github.com/EthanHaller/Portfolio",
 		"skills": ["React", "CSS", "Figma"]
 	}

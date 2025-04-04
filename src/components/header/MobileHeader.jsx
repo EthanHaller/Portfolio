@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react"
 import { IoMenu } from "react-icons/io5"
 import { IoCloseOutline } from "react-icons/io5"
+import useIsMobile from "../../hooks/useIsMobile"
 
 export default function MobileHeader({ handleScroll, revealed }) {
 	const [menuVisible, setMenuVisible] = useState(false)
 	const [homeVisible, setHomeVisible] = useState(revealed)
 	const [menuIconVisible, setMenuIconVisible] = useState(revealed)
+	const isMobile = useIsMobile()
 
 	const handleMobileScroll = (section) => {
 		document.body.style.overflow = null
@@ -18,7 +20,7 @@ export default function MobileHeader({ handleScroll, revealed }) {
 
 		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
 
-		if (prefersReducedMotion) {
+		if (prefersReducedMotion || isMobile) {
 			setHomeVisible(true)
 			setMenuIconVisible(true)
 			return
