@@ -100,7 +100,7 @@ function App() {
 				</style>
 			)}
 
-			{!isMobile && <Preloader />}
+			<Preloader />
 			<main id="main">
 				<Header handleScroll={handleScroll} />
 				<Home innerRef={homeRef} />
