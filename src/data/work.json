@@ -5,10 +5,9 @@
 		"position": "Software Engineer Intern",
 		"dates": "May 2024 — August 2024",
 		"bullets": [
-			"Enabled non-developers to create Yext Pages in seconds by building a visual editor in a team of eight with React and Go.",
-			"Accelerated site initialization time by 95% through a gRPC endpoint in Go to automate repo provisioning and deployment.",
-			"Streamlined development for 100+ API routes by architecting a scalable HTTP router for a new microservice in Go.",
-			"Revitalized 63 React components in a distributed system by updating Java RPC endpoints for advanced entity filtering."
+			"Enabled non-developers to design Yext Pages sites in seconds by building a no-code drag-and-drop website visual editor with React.js, TypeScript, and Puck in an agile team of eight.",
+			"Reduced component preview time by 95% by implementing a developer mode that proxied visual editor iframe connections to localhost for real-time updates.",
+			"Extended legacy React multi-select components to support advanced entity filtering options, maintaining full backward compatibility with comprehensive test coverage using Jest."
 
 		],
 		"skills": ["Go", "Java", "React", "TypeScript", "gRPC"]
@@ -19,9 +18,9 @@
 		"position": "Software Engineer Intern",
 		"dates": "June 2023 — August 2023",
 		"bullets": [
-			"Secured $30k in funding by leading development of an insurance claim analytics feature utilizing JavaScript and MySQL.",
-			"Boosted frontend response time from 5.4s to 2.1s by optimizing MySQL query algorithms for filtering and pagination.",
-			"Enhanced backend maintainability by refactoring 60,000+ lines of JavaScript into AWS Lambda serverless functions."
+			"Secured $30k in funding by collaborating with stakeholders to develop critical insurance claim analytics features utilizing JavaScript, AWS (Lambda, S3, API Gateway), and Restful APIs.",
+			"Boosted UX and frontend responsiveness by 61% by optimizing API filtering and pagination in JSON query endpoints.",
+			"Enhanced frontend scalability by modularizing 30,000+ lines of JavaScript into maintainable Next.js components."
 
 		],
 		"skills": ["HTML", "CSS", "JavaScript", "AWS (Lambda, S3)"]
@@ -32,10 +31,9 @@
 		"position": "Teaching Assistant",
 		"dates": "August 2023 — Present",
 		"bullets": [
-			"Mentor 15 students each semester in building full-stack applications with Django, AWS S3, CI/CD, and RESTful APIs.",
-			"Facilitate sprint planning and refinement workshops to enable student teams to excel in agile environments.",
-			"Guide 400+ students during weekly office hours on object-oriented programming and Java testing frameworks.",
-			"Simplify concepts such as OOP, TDD, REST, design patterns, and Git to strengthen practical software skills for students."
+			"Mentored 15 students per semester in full-stack development with Django, AWS S3, CI/CD, and RESTful APIs.",
+			"Facilitated sprint planning and refinement workshops to help agile teams navigate ambiguous technical challenges.",
+			"Supported 400+ students in mastering OOP, Git workflows, and Java testing frameworks during weekly office hours."
 
 		],
 		"skills": ["Python", "Java", "Django", "Heroku", "Postgres", "CI/CD"]

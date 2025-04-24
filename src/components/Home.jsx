@@ -31,7 +31,7 @@ function Home({ innerRef }) {
 					<p className={"hello-text" + (helloTextVisible ? " viewed" : " not-viewed")}>Hello, my name is </p>
 					<h1 className={"name" + (nameVisible ? " viewed" : " not-viewed")}>Ethan Haller</h1>
 					<p className={"motto-text" + (mottoTextVisible ? " viewed" : " not-viewed")}>
-						I am a versatile software engineer with a passion for full-stack development. Most recently, I worked with React, TypeScript, and Go at{" "}
+						I am a versatile software engineer with a passion for frontend development. Most recently, I worked with React, TypeScript, and Go at{" "}
 						<a className="link" href="https://www.yext.com/" target="_blank" rel="noopener noreferrer">
 							Yext
 						</a>
