@@ -22,7 +22,6 @@
 		"description": "A catalog of study spaces at the University of Virginia. Explore, search, view, and submit information about various study spots around UVA. Powered by the Google Maps API.",
 		"imagePath": "/images/uvastudyspaces.webp",
 		"githubLink": "https://github.com/EthanHaller/UVAStudySpaces",
-		"deploymentLink": "https://studyspaces-7253e4d961eb.herokuapp.com/study/",
 		"skills": ["Django", "Python", "Heroku", "GitHub Actions", "CI/CD"]
 	},
 	{
@@ -55,7 +54,7 @@
 	{
 		"title": "Lorem Squarepants",
 		"description": "A Lorem Ipsum generator full of quotes from the SpongeBob SquarePants show!",
-		"imagePath": "https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-3xqnd60o.png",
+		"imagePath": "https://pbs.twimg.com/profile_images/1285630920263966721/Uk6O1QGC_400x400.jpg",
 		"githubLink": "https://github.com/EthanHaller/Lorem-Squarepants",
 		"deploymentLink": "https://www.npmjs.com/package/lorem-squarepants",
 		"skills": ["JavaScript", "npm"]
